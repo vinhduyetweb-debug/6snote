@@ -1,17 +1,18 @@
 {
   "name": "wisdom-notebook-pwa",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "private": true,
-  "description": "Sổ Thông Thái - Offline-first PWA for personal knowledge notes.",
+  "description": "Sổ Thông Thái Knowledge OS - offline-first PWA",
   "scripts": {
     "check": "node --check app.js && node --check service-worker.js && node --check tools/validate-app.js",
     "validate": "node tools/validate-app.js"
   },
   "keywords": [
     "pwa",
-    "offline-first",
+    "offline",
     "notes",
-    "vietnamese"
+    "knowledge",
+    "second-brain"
   ],
   "license": "UNLICENSED"
 }

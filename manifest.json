@@ -1,12 +1,12 @@
 {
-  "name": "Sổ Thông Thái",
-  "short_name": "Thông Thái",
-  "description": "PWA ghi tri thức cá nhân, offline-first, gọn và dễ dùng.",
+  "name": "Sổ Thông Thái Knowledge OS",
+  "short_name": "Sổ Thông Thái",
+  "description": "PWA offline-first để biến ghi chú thành bài học, hành động và thẻ ôn tập.",
   "start_url": "./index.html",
   "scope": "./",
   "display": "standalone",
   "background_color": "#f7f3ea",
-  "theme_color": "#0f172a",
+  "theme_color": "#111827",
   "orientation": "portrait-primary",
   "icons": [
     {

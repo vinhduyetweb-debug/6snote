@@ -1,28 +1,65 @@
-# Sổ Thông Thái V1.0.0 — Offline Core
+# Sổ Thông Thái Knowledge OS V1.1.0
 
-**Sổ Thông Thái** là mini app PWA tĩnh để lưu tri thức cá nhân bằng tiếng Việt: ý tưởng, bài học, prompt AI, trích dẫn, checklist, link/video và tài liệu cần dùng lại.
+**Sổ Thông Thái Knowledge OS** là mini app PWA offline-first giúp lưu tri thức cá nhân và biến ghi chú thô thành:
 
-Bản này tách riêng khỏi ý tưởng 6 quyển sổ để giao diện gọn hơn và tránh lỗi lưu phức tạp. Mục tiêu V1.0.0 là: mở app lên, ghi nhanh, lưu chắc, tìm lại dễ.
+- ý chính
+- bài học
+- hành động cần làm
+- flashcard ôn tập
+- bản đồ tag tri thức
+
+App chạy tĩnh bằng HTML/CSS/JavaScript thuần, không backend, không đăng nhập, không private API, không tracking.
+
+## Điểm khác Note thường
+
+Bản V1.1.0 không chỉ lưu ghi chú. App có **Distill Engine offline** để chưng cất nội dung ngay trên thiết bị:
+
+1. Ghi hoặc dán nội dung thô.
+2. Bấm `Lưu & chưng cất`.
+3. App tự tạo ý chính, bài học, hành động, flashcard và tag gợi ý.
+4. Mỗi ngày vào tab `Ôn tập` và `Hành động` để dùng lại tri thức.
+
+Distill Engine là thuật toán local đơn giản, không gọi AI thật. Khi cần AI thật có thể nâng cấp ở V2.
 
 ## Chức năng chính
 
-- Ghi nhanh tri thức với tiêu đề, nội dung, loại, tag, nguồn/link.
-- Lưu bằng `localStorage`, đơn giản và ổn định.
-- Tự giữ nháp khi đang gõ để hạn chế mất nội dung.
-- Danh sách ghi chú dạng thẻ, dễ đọc trên điện thoại.
-- Tìm kiếm theo tiêu đề, nội dung, tag và nguồn.
-- Lọc theo loại tri thức, yêu thích, lưu trữ.
-- Đánh dấu yêu thích, copy nhanh, sửa, ẩn/lưu trữ, xóa.
-- Dashboard: tổng ghi chú, ghi hôm nay, yêu thích, số tag.
-- Focus Mode để chỉ còn vùng ghi chính.
-- Export/import JSON để sao lưu và chuyển thiết bị.
-- PWA cài đặt được, chạy offline sau lần mở đầu tiên.
+- Ghi nhanh tri thức.
+- Chỉ lưu hoặc lưu kèm chưng cất.
+- Tự giữ nháp bằng localStorage.
+- Tìm kiếm toàn văn.
+- Lọc theo loại, tag, yêu thích, lưu trữ.
+- Dashboard: tổng tri thức, mục cần ôn, hành động mở, flashcard.
+- Tab Hôm nay.
+- Tab Kho tri thức.
+- Tab Ôn tập theo cấp độ nhớ.
+- Tab Flashcard.
+- Tab Hành động.
+- Tab Bản đồ tag.
+- Copy nhanh ghi chú hoặc hành động.
+- Export/import JSON.
+- Reset dữ liệu có xác nhận 2 lần.
+- PWA offline sau lần mở đầu tiên.
+
+## Cấu trúc file
+
+```text
+/
+  index.html
+  style.css
+  app.js
+  manifest.json
+  service-worker.js
+  icon.svg
+  README.md
+  CHANGELOG.md
+  package.json
+  tools/
+    validate-app.js
+```
 
 ## Cách chạy local
 
-Mở trực tiếp `index.html` bằng trình duyệt hoặc chạy một static server bất kỳ.
-
-Ví dụ với Python:
+Cách đơn giản:
 
 ```bash
 python -m http.server 8080
@@ -34,6 +71,8 @@ Sau đó mở:
 http://localhost:8080
 ```
 
+Hoặc dùng bất kỳ static server nào.
+
 ## Cách test
 
 ```bash
@@ -41,37 +80,37 @@ npm run check
 npm run validate
 ```
 
-## Cách deploy Vercel
+Trong đó:
+
+- `check`: kiểm tra cú pháp JavaScript.
+- `validate`: kiểm tra file bắt buộc, manifest, service worker, localStorage key, export/import và release sạch.
+
+## Deploy Vercel
 
 ```bash
 npm run check
 npm run validate
 git add .
-git commit -m "Release V1.0.0 Wisdom Notebook Offline Core"
+git commit -m "Release V1.1.0 Knowledge OS"
 git push origin main
 npx vercel --prod
 ```
 
-## Cách dùng app
-
-1. Bấm **+ Ghi tri thức** hoặc nhập ngay ở khung đầu tiên.
-2. Điền tiêu đề và nội dung.
-3. Chọn loại tri thức: ý tưởng, bài học, prompt, quote, checklist, link, sách hoặc khác.
-4. Thêm tag ngắn như `ai, tài chính, học tập`.
-5. Bấm **Lưu tri thức**.
-6. Dùng tìm kiếm, tag hoặc bộ lọc để tìm lại.
-7. Dùng ⭐ cho ghi chú cần dùng lại nhiều.
-8. Dùng **Xuất JSON** định kỳ để sao lưu.
-
 ## Backup / Restore
 
-- **Xuất JSON:** tải toàn bộ dữ liệu thành file backup.
-- **Nhập JSON:** hợp nhất dữ liệu theo ID, không tự xóa dữ liệu cũ.
-- **Reset dữ liệu:** yêu cầu nhập `XOA` để tránh bấm nhầm.
+### Backup
 
-## Dữ liệu lưu ở đâu?
+Bấm `Xuất JSON` để tải file backup.
 
-Dữ liệu lưu trong trình duyệt hiện tại bằng các key:
+### Restore
+
+Mở `Sao lưu & phục hồi` → bấm `Nhập JSON` → chọn file backup.
+
+Import sẽ hợp nhất theo ID. App không tự xóa dữ liệu cũ.
+
+## Lưu trữ dữ liệu
+
+Dữ liệu chính nằm trong localStorage key:
 
 ```text
 wisdom_notebook_records_v1
@@ -80,18 +119,18 @@ wisdom_notebook_draft_v1
 wisdom_notebook_last_backup_v1
 ```
 
-Không có backend, không đăng nhập, không private API, không tracking.
+Key records vẫn giữ hậu tố `_v1` để không phá dữ liệu của bản V1.0.0. Khi mở V1.1.0, app tự normalize/migration bản ghi cũ sang schema mới trong localStorage.
 
-## Giới hạn V1.0.0
+## Giới hạn V1.1.0
 
 - Chưa có AI thật.
 - Chưa đồng bộ đa thiết bị.
-- Chưa lưu file ảnh, voice hoặc PDF trực tiếp.
-- Nếu đổi trình duyệt hoặc xóa dữ liệu web, cần restore từ JSON backup.
+- Chưa lưu file nặng như PDF, ảnh, voice.
+- Distill Engine chỉ là thuật toán offline rule-based.
+- Dữ liệu phụ thuộc vào trình duyệt hiện tại, nên cần export JSON định kỳ.
 
-## Version
+## Version hiện tại
 
-- Current: `1.0.0`
-- Cache: `wisdom-notebook-cache-v1.0.0`
+**V1.1.0 — Knowledge OS**
 
-Slogan: **Ghi ít nhưng đúng, nhớ lâu và dùng được.**
+Slogan: **Biết mà dùng được, tri thức mới sống.**
