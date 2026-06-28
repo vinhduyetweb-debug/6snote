@@ -1,13 +1,13 @@
 {
-  "name": "Sổ Thông Thái Learning Pro",
+  "name": "Sổ Thông Thái - Public Learning Library Pro",
   "short_name": "Sổ Thông Thái",
-  "description": "PWA offline-first để học kiến thức mới, chưng cất bài học, flashcard, quiz và hành động.",
-  "start_url": ".",
-  "scope": ".",
+  "description": "PWA học tập offline-first: kho tri thức public tự đồng bộ, kho riêng IndexedDB, lịch âm dương, slogan theo ngữ cảnh, flashcard, quiz và hành động.",
+  "start_url": "./index.html",
+  "scope": "./",
   "display": "standalone",
-  "orientation": "portrait-primary",
-  "background_color": "#07101f",
+  "background_color": "#070b16",
   "theme_color": "#0b1020",
+  "orientation": "portrait-primary",
   "lang": "vi",
   "icons": [
     { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }

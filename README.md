@@ -1,47 +1,73 @@
-# Sổ Thông Thái V1.2.0 — Learning Pro
+# Sổ Thông Thái V1.3.0 — Public Learning Library Pro
 
-**Sổ Thông Thái Learning Pro** là một mini app PWA offline-first để phục vụ nhu cầu học kiến thức mới hằng ngày. Bản V1.2.0 không còn là một app note đơn thuần. App được thiết kế như một **bàn học cá nhân offline**: ghi kiến thức, chưng cất ý chính, tạo flashcard, ôn tập, làm quiz và biến bài học thành hành động.
+**Sổ Thông Thái** là mini app PWA học tập tiếng Việt theo hướng **Public Learning Library + Private Learning Desk**.
+
+Bản V1.3.0 giải quyết đúng nhu cầu mới: người dùng bất kỳ biết đường link app có thể mở và thấy **kho tri thức public hiện tại**. Kho public được lưu dạng file tĩnh `data/wisdom-public.json`, phù hợp để đặt trên GitHub cùng source app. Khi mở app, hệ thống tự tải file này, import/cache vào IndexedDB và hiển thị trong thư viện.
 
 ## Triết lý sản phẩm
 
-Mỗi kiến thức đi qua 4 bước:
+Không chỉ ghi note.
 
-1. **Capture** — ghi lại kiến thức thô.
-2. **Distill** — rút ý chính, bài học, khái niệm, câu hỏi.
-3. **Practice** — ôn tập bằng flashcard và quiz.
-4. **Apply** — biến tri thức thành hành động thật.
+App biến tri thức thành chu trình:
 
-Mục tiêu: người dùng mở app lần sau vẫn muốn quay lại vì luôn thấy rõ hôm nay cần học gì, ôn gì và làm gì.
+```text
+Capture → Distill → Practice → Apply
+```
 
-## Tính năng chính
+Tức là:
 
-- Giao diện Learning OS chuyên nghiệp, mobile-first, dark/light mode.
-- Dashboard học tập: tổng tri thức, thẻ cần ôn, hành động mở, streak, mastery.
-- Mission hôm nay: app tự gợi ý việc nên làm tiếp theo.
-- Ghi kiến thức mới theo chế độ: học sâu, ghi nhanh, ứng dụng dự án, ôn thi.
-- Distill Engine offline: tự tạo ý chính, bài học, khái niệm, câu hỏi và hành động.
-- Flashcard tự sinh từ nội dung.
-- Spaced Review: thẻ đến hạn, nút Quên/Nhớ/Rất chắc.
-- Quiz nhanh từ flashcard.
-- Apply Board: gom các hành động sinh ra từ tri thức.
-- Learning Paths: tự tạo lộ trình học từ tag.
-- Knowledge Map: bản đồ tag, mastery, việc mở và khoảng trống học tập.
-- Reading Room: đọc lại ghi chú và bản chưng cất trong modal riêng.
-- Tìm kiếm, lọc theo loại, tag, trạng thái, ưu tiên.
-- Export/import JSON để backup và chuyển thiết bị.
-- Reset dữ liệu có xác nhận kép.
-- PWA offline cache shell app sau lần mở đầu tiên.
+1. Ghi hoặc đọc kiến thức.
+2. Rút ý chính, bài học, mô hình tư duy.
+3. Tạo flashcard và quiz để ôn.
+4. Biến thành hành động áp dụng.
 
-## Công nghệ
+## Điểm nâng cấp lớn V1.3.0
 
-- HTML/CSS/JavaScript thuần.
-- Không framework.
-- Không backend.
-- Không login.
-- Không private API.
-- Không tracking.
-- Dữ liệu lưu bằng `localStorage`.
-- Service worker cache app shell.
+- **Public Library Sync**: tự động đồng bộ `data/wisdom-public.json` khi mở app.
+- **Kho chung / Kho riêng tách bạch**:
+  - Kho chung: dữ liệu public do chủ app cập nhật trên GitHub.
+  - Kho riêng: dữ liệu cá nhân của từng người, lưu trên thiết bị họ.
+- **IndexedDB làm kho chính** để hỗ trợ lượng tri thức lớn hơn localStorage.
+- **Migration an toàn** từ key cũ `wisdom_notebook_records_v1`.
+- **Slogan của Lão theo bối cảnh note gần nhất**.
+- **Gợi ý lại một note bất kỳ mỗi lần mở app**, không lặp trong cùng một ngày.
+- **Ngày giờ dương lịch và âm lịch Việt Nam** hiển thị ngay trên Home.
+- **Public Seed Library 36 bài học chất lượng cao** gồm 6 lộ trình:
+  - Tự học thông minh
+  - Prompt AI thực chiến
+  - Tư duy phản biện
+  - Kỷ luật cá nhân
+  - Tài chính cá nhân thực dụng
+  - Mini App & PWA
+- **Flashcard, quiz, review, action board, knowledge map**.
+- **Export/import JSON** để backup/restore.
+- **PWA offline-first**: cache app shell và file public JSON.
+
+## Quy tắc dữ liệu
+
+### Kho chung
+
+File:
+
+```text
+data/wisdom-public.json
+```
+
+Người dùng mở app sẽ tự tải file này nếu online. Nếu offline, app dùng bản đã cache trong IndexedDB/service worker.
+
+Kho chung **chỉ đọc trong app**. Không cho người dùng sửa trực tiếp để tránh phá JSON.
+
+### Kho riêng
+
+Người dùng ghi note riêng trên thiết bị của họ. Dữ liệu lưu trong IndexedDB.
+
+Kho riêng không bị ghi đè khi public library cập nhật.
+
+## Vì sao dùng GitHub cho file public?
+
+File JSON public là dữ liệu tĩnh. GitHub/Vercel/GitHub Pages phù hợp với mô hình static PWA: dễ version hóa, dễ rollback, dễ deploy, URL ổn định.
+
+Google Drive nên dùng để giữ ZIP/JSON backup cá nhân, không nên làm database public cho app tĩnh.
 
 ## Cấu trúc file
 
@@ -56,19 +82,21 @@ Mục tiêu: người dùng mở app lần sau vẫn muốn quay lại vì luôn
   README.md
   CHANGELOG.md
   package.json
+  data/
+    wisdom-public.json
   tools/
     validate-app.js
 ```
 
 ## Cách chạy local
 
-Có thể mở trực tiếp `index.html`, nhưng để test PWA/service worker ổn hơn nên chạy bằng local server:
+Khuyến nghị chạy bằng local server để service worker và fetch JSON hoạt động đúng:
 
 ```bash
 python -m http.server 8080
 ```
 
-Sau đó mở:
+Mở:
 
 ```text
 http://localhost:8080
@@ -83,72 +111,87 @@ npm run validate
 
 `npm run check` kiểm tra cú pháp JavaScript.
 
-`npm run validate` kiểm tra file bắt buộc, manifest, service worker, cache version, root container, storage key và placeholder nội bộ.
+`npm run validate` kiểm tra:
 
-## Cách dùng app
+- file bắt buộc tồn tại;
+- manifest hợp lệ;
+- service worker có cache version `v1.3.0`;
+- app dùng IndexedDB;
+- giữ key cũ để migration;
+- có lịch âm/dương;
+- có daily random note không lặp;
+- có public sync;
+- public JSON hợp lệ, không trùng ID;
+- release không chứa `.env.local`, `.vercel`, `node_modules`.
 
-1. Mở app.
-2. Chọn **Ghi kiến thức mới**.
-3. Nhập tiêu đề, nội dung, tag, nguồn và hành động muốn áp dụng.
-4. Bấm **Lưu & tạo bài học**.
-5. Vào **Distill Studio** để xem ý chính, bài học, câu hỏi và flashcard.
-6. Vào **Ôn tập** để review thẻ đến hạn.
-7. Vào **Quiz** để kiểm tra nhanh.
-8. Vào **Hành động** để biến bài học thành việc thật.
-9. Dùng **Xuất JSON** định kỳ để backup.
-
-## Backup / Restore
-
-### Backup
-
-Bấm **Xuất JSON**. App sẽ tải file dạng:
-
-```text
-wisdom-notebook-backup-YYYY-MM-DD.json
-```
-
-### Restore
-
-Bấm **Nhập JSON**, chọn file backup. App sẽ nhập dữ liệu và gộp theo `id`, không xóa dữ liệu hiện có.
-
-## Tương thích dữ liệu
-
-Bản V1.2.0 tiếp tục dùng key chính:
-
-```text
-wisdom_notebook_records_v1
-wisdom_notebook_settings_v1
-wisdom_notebook_draft_v1
-wisdom_notebook_last_backup_v1
-```
-
-Mục tiêu là không phá dữ liệu cũ từ V1.0.0 và V1.1.0. Các record cũ sẽ được normalize khi load.
-
-## Deploy Vercel
+## Cách deploy Vercel
 
 ```bash
 npm run check
 npm run validate
 git add .
-git commit -m "Release V1.2.0 Learning Pro"
+git commit -m "Release V1.3.0 Public Learning Library Pro"
 git push origin main
 npx vercel --prod
 ```
 
-## Deploy GitHub Pages
+## Cách deploy GitHub Pages
 
-Đẩy toàn bộ source lên branch chính, bật GitHub Pages trỏ về root folder.
+1. Đẩy toàn bộ source lên GitHub.
+2. Bật GitHub Pages trỏ về root folder.
+3. Đảm bảo `data/wisdom-public.json` nằm cùng repo.
+4. Mỗi lần sửa dữ liệu public, cập nhật `publicDataVersion` trong JSON rồi commit/push.
+
+## Cách cập nhật kho chung
+
+Sửa file:
+
+```text
+data/wisdom-public.json
+```
+
+Tăng version:
+
+```json
+"publicDataVersion": "2026.06.28-v2"
+```
+
+Sau đó:
+
+```bash
+git add data/wisdom-public.json
+git commit -m "Update public wisdom data"
+git push origin main
+```
+
+Người dùng mở app lại sẽ tự sync.
+
+## Backup / Restore
+
+### Backup
+
+Bấm **Xuất JSON**. App tải file:
+
+```text
+wisdom-notebook-v1.3-backup-YYYY-MM-DD.json
+```
+
+File này nên lưu vào Google Drive cá nhân.
+
+### Restore
+
+Bấm **Nhập JSON**, chọn file backup. App sẽ gộp theo `id`, không xóa dữ liệu hiện có.
 
 ## Giới hạn hiện tại
 
-- Distill Engine là thuật toán offline, không phải AI cloud thật.
-- Không đồng bộ đa thiết bị tự động.
+- Public library là file JSON tĩnh, không phải database nhiều người cùng sửa.
+- App không cho public edit trực tiếp vì chưa có backend/phân quyền.
+- Âm lịch dùng thuật toán offline trong JS, phù hợp hiển thị lịch Việt Nam phổ thông nhưng không thay thế lịch pháp chính thức.
+- Nếu mở trực tiếp bằng `file://`, fetch JSON/service worker có thể không hoạt động đúng. Nên chạy local server hoặc deploy.
 - Không lưu file PDF/ảnh/voice trực tiếp để giữ app nhẹ.
-- localStorage phụ thuộc trình duyệt; nên export JSON định kỳ.
-- Chưa test thủ công trên toàn bộ thiết bị thật.
 
 ## Version
 
-**V1.2.0 — Learning Pro**
+**V1.3.0 — Public Learning Library Pro**
 
-Slogan: **Biết mà ôn được, làm được, mới là tri thức sống.**
+Slogan: **Kho chung để mở đường, kho riêng để giữ mình.**

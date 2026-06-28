@@ -1,0 +1,2457 @@
+{
+  "schemaVersion": 3,
+  "publicDataVersion": "2026.06.28-v1",
+  "title": "Sổ Thông Thái Public Seed Library",
+  "description": "Bộ dữ liệu public mẫu chất lượng cao cho Wisdom Notebook V1.3.0: tự học, prompt AI, tư duy phản biện, kỷ luật, tài chính cá nhân, Mini App & PWA.",
+  "updatedAt": "2026-06-28T00:00:00.000+07:00",
+  "items": [
+    {
+      "id": "pub-tu-hoc-thong-minh-01",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Tự học thông minh",
+      "level": "beginner",
+      "title": "Đọc để dùng, không đọc để quên",
+      "summary": "Đọc sâu bắt đầu bằng câu hỏi: mình sẽ dùng điều này vào việc gì trong 24 giờ tới? Đọc mà không có đầu ra sẽ nhanh biến thành cảm giác bận rộn giả.",
+      "coreIdea": "Đọc sâu bắt đầu bằng câu hỏi: mình sẽ dùng điều này vào việc gì trong 24 giờ tới?",
+      "whyItMatters": "Đọc mà không có đầu ra sẽ nhanh biến thành cảm giác bận rộn giả.",
+      "mentalModel": "Input → Output: mỗi lần học phải có sản phẩm nhỏ.",
+      "example": "Đọc 10 trang về PWA rồi viết checklist deploy 7 bước.",
+      "action": "Sau khi đọc, viết 5 gạch đầu dòng và chọn 1 việc làm ngay.",
+      "content": "Đọc để dùng, không đọc để quên. Đọc sâu bắt đầu bằng câu hỏi: mình sẽ dùng điều này vào việc gì trong 24 giờ tới? Đọc mà không có đầu ra sẽ nhanh biến thành cảm giác bận rộn giả. Mô hình: Input → Output: mỗi lần học phải có sản phẩm nhỏ.. Ví dụ: Đọc 10 trang về PWA rồi viết checklist deploy 7 bước. Hành động: Sau khi đọc, viết 5 gạch đầu dòng và chọn 1 việc làm ngay.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Đọc để dùng, không đọc để quên' là gì?",
+          "a": "Đọc sâu bắt đầu bằng câu hỏi: mình sẽ dùng điều này vào việc gì trong 24 giờ tới?"
+        },
+        {
+          "q": "Vì sao bài 'Đọc để dùng, không đọc để quên' đáng học?",
+          "a": "Đọc mà không có đầu ra sẽ nhanh biến thành cảm giác bận rộn giả."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Input → Output: mỗi lần học phải có sản phẩm nhỏ."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Sau khi đọc, viết 5 gạch đầu dòng và chọn 1 việc làm ngay."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Đọc để dùng, không đọc để quên' nhấn mạnh điều gì?",
+          "choices": [
+            "Đọc sâu bắt đầu bằng câu hỏi: mình sẽ dùng điều này vào việc gì trong 24 giờ tới?",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Đọc sâu bắt đầu bằng câu hỏi: mình sẽ dùng điều này vào việc gì trong 24 giờ tới?"
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Sau khi đọc, viết 5 gạch đầu dòng và chọn 1 việc làm ngay.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Sau khi đọc, viết 5 gạch đầu dòng và chọn 1 việc làm ngay."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Sau khi đọc, viết 5 gạch đầu dòng và chọn 1 việc làm ngay.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "tu-hoc",
+        "doc-sau",
+        "hanh-dong"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-tu-hoc-thong-minh-02",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Tự học thông minh",
+      "level": "beginner",
+      "title": "Quy tắc 15 phút chống trì hoãn học tập",
+      "summary": "Không cần thắng cả ngày, chỉ cần mở bài và học thật 15 phút. Não thường sợ khởi động hơn sợ công việc.",
+      "coreIdea": "Không cần thắng cả ngày, chỉ cần mở bài và học thật 15 phút.",
+      "whyItMatters": "Não thường sợ khởi động hơn sợ công việc.",
+      "mentalModel": "Activation Energy: giảm lực cản để bắt đầu.",
+      "example": "Mở app, đọc 1 bài, tạo 2 flashcard là đủ giữ chuỗi.",
+      "action": "Đặt hẹn 15 phút và chỉ làm một phần nhỏ nhất.",
+      "content": "Quy tắc 15 phút chống trì hoãn học tập. Không cần thắng cả ngày, chỉ cần mở bài và học thật 15 phút. Não thường sợ khởi động hơn sợ công việc. Mô hình: Activation Energy: giảm lực cản để bắt đầu.. Ví dụ: Mở app, đọc 1 bài, tạo 2 flashcard là đủ giữ chuỗi. Hành động: Đặt hẹn 15 phút và chỉ làm một phần nhỏ nhất.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Quy tắc 15 phút chống trì hoãn học tập' là gì?",
+          "a": "Không cần thắng cả ngày, chỉ cần mở bài và học thật 15 phút."
+        },
+        {
+          "q": "Vì sao bài 'Quy tắc 15 phút chống trì hoãn học tập' đáng học?",
+          "a": "Não thường sợ khởi động hơn sợ công việc."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Activation Energy: giảm lực cản để bắt đầu."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Đặt hẹn 15 phút và chỉ làm một phần nhỏ nhất."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Quy tắc 15 phút chống trì hoãn học tập' nhấn mạnh điều gì?",
+          "choices": [
+            "Không cần thắng cả ngày, chỉ cần mở bài và học thật 15 phút.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Không cần thắng cả ngày, chỉ cần mở bài và học thật 15 phút."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Đặt hẹn 15 phút và chỉ làm một phần nhỏ nhất.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Đặt hẹn 15 phút và chỉ làm một phần nhỏ nhất."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Đặt hẹn 15 phút và chỉ làm một phần nhỏ nhất.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "tu-hoc",
+        "ky-luat",
+        "thoi-quen"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-tu-hoc-thong-minh-03",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Tự học thông minh",
+      "level": "intermediate",
+      "title": "Ghi chú Cornell phiên bản mini app",
+      "summary": "Một note tốt có ba phần: ý chính, câu hỏi ôn, hành động áp dụng. Cấu trúc giúp ghi chú có thể dùng lại thay vì nằm chết.",
+      "coreIdea": "Một note tốt có ba phần: ý chính, câu hỏi ôn, hành động áp dụng.",
+      "whyItMatters": "Cấu trúc giúp ghi chú có thể dùng lại thay vì nằm chết.",
+      "mentalModel": "Cue → Recall → Apply.",
+      "example": "Sau bài học về tài chính, tạo câu hỏi: dòng tiền ròng là gì?",
+      "action": "Chuyển note gần nhất thành 3 câu hỏi ôn tập.",
+      "content": "Ghi chú Cornell phiên bản mini app. Một note tốt có ba phần: ý chính, câu hỏi ôn, hành động áp dụng. Cấu trúc giúp ghi chú có thể dùng lại thay vì nằm chết. Mô hình: Cue → Recall → Apply.. Ví dụ: Sau bài học về tài chính, tạo câu hỏi: dòng tiền ròng là gì? Hành động: Chuyển note gần nhất thành 3 câu hỏi ôn tập.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Ghi chú Cornell phiên bản mini app' là gì?",
+          "a": "Một note tốt có ba phần: ý chính, câu hỏi ôn, hành động áp dụng."
+        },
+        {
+          "q": "Vì sao bài 'Ghi chú Cornell phiên bản mini app' đáng học?",
+          "a": "Cấu trúc giúp ghi chú có thể dùng lại thay vì nằm chết."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Cue → Recall → Apply."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Chuyển note gần nhất thành 3 câu hỏi ôn tập."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Ghi chú Cornell phiên bản mini app' nhấn mạnh điều gì?",
+          "choices": [
+            "Một note tốt có ba phần: ý chính, câu hỏi ôn, hành động áp dụng.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Một note tốt có ba phần: ý chính, câu hỏi ôn, hành động áp dụng."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Chuyển note gần nhất thành 3 câu hỏi ôn tập.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Chuyển note gần nhất thành 3 câu hỏi ôn tập."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Chuyển note gần nhất thành 3 câu hỏi ôn tập.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "ghi-chu",
+        "flashcard",
+        "tu-hoc"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-tu-hoc-thong-minh-04",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Tự học thông minh",
+      "level": "intermediate",
+      "title": "Feynman 4 bước để hiểu thật",
+      "summary": "Giải thích lại bằng ngôn ngữ đơn giản là bài kiểm tra hiểu sâu. Nếu chưa dạy lại được, nghĩa là còn mù mờ.",
+      "coreIdea": "Giải thích lại bằng ngôn ngữ đơn giản là bài kiểm tra hiểu sâu.",
+      "whyItMatters": "Nếu chưa dạy lại được, nghĩa là còn mù mờ.",
+      "mentalModel": "Teach Back Loop.",
+      "example": "Giải thích blockchain cho học sinh lớp 6 trong 5 câu.",
+      "action": "Viết lại một khái niệm khó bằng lời của Lão.",
+      "content": "Feynman 4 bước để hiểu thật. Giải thích lại bằng ngôn ngữ đơn giản là bài kiểm tra hiểu sâu. Nếu chưa dạy lại được, nghĩa là còn mù mờ. Mô hình: Teach Back Loop.. Ví dụ: Giải thích blockchain cho học sinh lớp 6 trong 5 câu. Hành động: Viết lại một khái niệm khó bằng lời của Lão.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Feynman 4 bước để hiểu thật' là gì?",
+          "a": "Giải thích lại bằng ngôn ngữ đơn giản là bài kiểm tra hiểu sâu."
+        },
+        {
+          "q": "Vì sao bài 'Feynman 4 bước để hiểu thật' đáng học?",
+          "a": "Nếu chưa dạy lại được, nghĩa là còn mù mờ."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Teach Back Loop."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Viết lại một khái niệm khó bằng lời của Lão."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Feynman 4 bước để hiểu thật' nhấn mạnh điều gì?",
+          "choices": [
+            "Giải thích lại bằng ngôn ngữ đơn giản là bài kiểm tra hiểu sâu.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Giải thích lại bằng ngôn ngữ đơn giản là bài kiểm tra hiểu sâu."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Viết lại một khái niệm khó bằng lời của Lão.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Viết lại một khái niệm khó bằng lời của Lão."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Viết lại một khái niệm khó bằng lời của Lão.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "feynman",
+        "tu-hoc",
+        "tu-duy"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-tu-hoc-thong-minh-05",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Tự học thông minh",
+      "level": "intermediate",
+      "title": "Spaced Repetition: ôn đúng lúc",
+      "summary": "Trí nhớ mạnh lên nhờ ôn trước khi quên hẳn. Ôn lại đều tiết kiệm thời gian hơn học lại từ đầu.",
+      "coreIdea": "Trí nhớ mạnh lên nhờ ôn trước khi quên hẳn.",
+      "whyItMatters": "Ôn lại đều tiết kiệm thời gian hơn học lại từ đầu.",
+      "mentalModel": "Forgetting Curve.",
+      "example": "Ôn ngày 1, 3, 7, 14 cho thẻ quan trọng.",
+      "action": "Ôn 5 flashcard đến hạn trước khi ghi note mới.",
+      "content": "Spaced Repetition: ôn đúng lúc. Trí nhớ mạnh lên nhờ ôn trước khi quên hẳn. Ôn lại đều tiết kiệm thời gian hơn học lại từ đầu. Mô hình: Forgetting Curve.. Ví dụ: Ôn ngày 1, 3, 7, 14 cho thẻ quan trọng. Hành động: Ôn 5 flashcard đến hạn trước khi ghi note mới.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Spaced Repetition: ôn đúng lúc' là gì?",
+          "a": "Trí nhớ mạnh lên nhờ ôn trước khi quên hẳn."
+        },
+        {
+          "q": "Vì sao bài 'Spaced Repetition: ôn đúng lúc' đáng học?",
+          "a": "Ôn lại đều tiết kiệm thời gian hơn học lại từ đầu."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Forgetting Curve."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Ôn 5 flashcard đến hạn trước khi ghi note mới."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Spaced Repetition: ôn đúng lúc' nhấn mạnh điều gì?",
+          "choices": [
+            "Trí nhớ mạnh lên nhờ ôn trước khi quên hẳn.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Trí nhớ mạnh lên nhờ ôn trước khi quên hẳn."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Ôn 5 flashcard đến hạn trước khi ghi note mới.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Ôn 5 flashcard đến hạn trước khi ghi note mới."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Ôn 5 flashcard đến hạn trước khi ghi note mới.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "on-tap",
+        "flashcard",
+        "tri-nho"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-tu-hoc-thong-minh-06",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Tự học thông minh",
+      "level": "intermediate",
+      "title": "Biến kiến thức thành dự án nhỏ",
+      "summary": "Học tốt nhất khi kiến thức được ép vào một sản phẩm thật. Dự án nhỏ tạo phản hồi thật, giúp phát hiện lỗ hổng hiểu biết.",
+      "coreIdea": "Học tốt nhất khi kiến thức được ép vào một sản phẩm thật.",
+      "whyItMatters": "Dự án nhỏ tạo phản hồi thật, giúp phát hiện lỗ hổng hiểu biết.",
+      "mentalModel": "Project-Based Learning.",
+      "example": "Học JS bằng cách làm một PWA checklist thay vì chỉ xem tutorial.",
+      "action": "Chọn 1 note và biến thành mini project 1 ngày.",
+      "content": "Biến kiến thức thành dự án nhỏ. Học tốt nhất khi kiến thức được ép vào một sản phẩm thật. Dự án nhỏ tạo phản hồi thật, giúp phát hiện lỗ hổng hiểu biết. Mô hình: Project-Based Learning.. Ví dụ: Học JS bằng cách làm một PWA checklist thay vì chỉ xem tutorial. Hành động: Chọn 1 note và biến thành mini project 1 ngày.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Biến kiến thức thành dự án nhỏ' là gì?",
+          "a": "Học tốt nhất khi kiến thức được ép vào một sản phẩm thật."
+        },
+        {
+          "q": "Vì sao bài 'Biến kiến thức thành dự án nhỏ' đáng học?",
+          "a": "Dự án nhỏ tạo phản hồi thật, giúp phát hiện lỗ hổng hiểu biết."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Project-Based Learning."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Chọn 1 note và biến thành mini project 1 ngày."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Biến kiến thức thành dự án nhỏ' nhấn mạnh điều gì?",
+          "choices": [
+            "Học tốt nhất khi kiến thức được ép vào một sản phẩm thật.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Học tốt nhất khi kiến thức được ép vào một sản phẩm thật."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Chọn 1 note và biến thành mini project 1 ngày.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Chọn 1 note và biến thành mini project 1 ngày."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Chọn 1 note và biến thành mini project 1 ngày.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "du-an",
+        "tu-hoc",
+        "mini-app"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-prompt-ai-thuc-chien-01",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Prompt AI thực chiến",
+      "level": "beginner",
+      "title": "Prompt tốt bắt đầu bằng vai trò và tiêu chuẩn",
+      "summary": "AI trả lời tốt hơn khi biết vai trò, mục tiêu, ràng buộc và chuẩn đầu ra. Prompt mơ hồ tạo kết quả mơ hồ.",
+      "coreIdea": "AI trả lời tốt hơn khi biết vai trò, mục tiêu, ràng buộc và chuẩn đầu ra.",
+      "whyItMatters": "Prompt mơ hồ tạo kết quả mơ hồ.",
+      "mentalModel": "Role → Task → Context → Constraints → Output.",
+      "example": "Yêu cầu AI đóng vai kỹ sư sản phẩm, build PWA tĩnh, xuất ZIP sạch.",
+      "action": "Viết lại prompt gần nhất theo 5 phần rõ ràng.",
+      "content": "Prompt tốt bắt đầu bằng vai trò và tiêu chuẩn. AI trả lời tốt hơn khi biết vai trò, mục tiêu, ràng buộc và chuẩn đầu ra. Prompt mơ hồ tạo kết quả mơ hồ. Mô hình: Role → Task → Context → Constraints → Output.. Ví dụ: Yêu cầu AI đóng vai kỹ sư sản phẩm, build PWA tĩnh, xuất ZIP sạch. Hành động: Viết lại prompt gần nhất theo 5 phần rõ ràng.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Prompt tốt bắt đầu bằng vai trò và tiêu chuẩn' là gì?",
+          "a": "AI trả lời tốt hơn khi biết vai trò, mục tiêu, ràng buộc và chuẩn đầu ra."
+        },
+        {
+          "q": "Vì sao bài 'Prompt tốt bắt đầu bằng vai trò và tiêu chuẩn' đáng học?",
+          "a": "Prompt mơ hồ tạo kết quả mơ hồ."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Role → Task → Context → Constraints → Output."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Viết lại prompt gần nhất theo 5 phần rõ ràng."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Prompt tốt bắt đầu bằng vai trò và tiêu chuẩn' nhấn mạnh điều gì?",
+          "choices": [
+            "AI trả lời tốt hơn khi biết vai trò, mục tiêu, ràng buộc và chuẩn đầu ra.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "AI trả lời tốt hơn khi biết vai trò, mục tiêu, ràng buộc và chuẩn đầu ra."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Viết lại prompt gần nhất theo 5 phần rõ ràng.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Viết lại prompt gần nhất theo 5 phần rõ ràng."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Viết lại prompt gần nhất theo 5 phần rõ ràng.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "ai",
+        "prompt",
+        "chatgpt"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-prompt-ai-thuc-chien-02",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Prompt AI thực chiến",
+      "level": "beginner",
+      "title": "Prompt kiểm tra lỗi tư duy",
+      "summary": "Dùng AI để soi giả định, rủi ro và điểm yếu trước khi hành động. Người ra quyết định giỏi không chỉ hỏi làm gì, mà hỏi sai ở đâu.",
+      "coreIdea": "Dùng AI để soi giả định, rủi ro và điểm yếu trước khi hành động.",
+      "whyItMatters": "Người ra quyết định giỏi không chỉ hỏi làm gì, mà hỏi sai ở đâu.",
+      "mentalModel": "Pre-mortem.",
+      "example": "Trước khi build app, hỏi: tính năng nào làm app rối? dữ liệu nào dễ mất?",
+      "action": "Tạo prompt pre-mortem cho dự án đang làm.",
+      "content": "Prompt kiểm tra lỗi tư duy. Dùng AI để soi giả định, rủi ro và điểm yếu trước khi hành động. Người ra quyết định giỏi không chỉ hỏi làm gì, mà hỏi sai ở đâu. Mô hình: Pre-mortem.. Ví dụ: Trước khi build app, hỏi: tính năng nào làm app rối? dữ liệu nào dễ mất? Hành động: Tạo prompt pre-mortem cho dự án đang làm.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Prompt kiểm tra lỗi tư duy' là gì?",
+          "a": "Dùng AI để soi giả định, rủi ro và điểm yếu trước khi hành động."
+        },
+        {
+          "q": "Vì sao bài 'Prompt kiểm tra lỗi tư duy' đáng học?",
+          "a": "Người ra quyết định giỏi không chỉ hỏi làm gì, mà hỏi sai ở đâu."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Pre-mortem."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Tạo prompt pre-mortem cho dự án đang làm."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Prompt kiểm tra lỗi tư duy' nhấn mạnh điều gì?",
+          "choices": [
+            "Dùng AI để soi giả định, rủi ro và điểm yếu trước khi hành động.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Dùng AI để soi giả định, rủi ro và điểm yếu trước khi hành động."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Tạo prompt pre-mortem cho dự án đang làm.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Tạo prompt pre-mortem cho dự án đang làm."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Tạo prompt pre-mortem cho dự án đang làm.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "ai",
+        "tu-duy-phan-bien",
+        "rui-ro"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-prompt-ai-thuc-chien-03",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Prompt AI thực chiến",
+      "level": "intermediate",
+      "title": "Prompt biến ý tưởng thành MVP",
+      "summary": "Một ý tưởng lớn cần được ép xuống bản nhỏ dùng được trong 1 ngày. MVP giúp tránh làm rộng, làm nặng, làm xong không dùng.",
+      "coreIdea": "Một ý tưởng lớn cần được ép xuống bản nhỏ dùng được trong 1 ngày.",
+      "whyItMatters": "MVP giúp tránh làm rộng, làm nặng, làm xong không dùng.",
+      "mentalModel": "Scope Lock.",
+      "example": "LifeOS thu về Sổ Thông Thái trước khi mở lại 6 sổ.",
+      "action": "Viết prompt yêu cầu AI khóa phạm vi V1.0.",
+      "content": "Prompt biến ý tưởng thành MVP. Một ý tưởng lớn cần được ép xuống bản nhỏ dùng được trong 1 ngày. MVP giúp tránh làm rộng, làm nặng, làm xong không dùng. Mô hình: Scope Lock.. Ví dụ: LifeOS thu về Sổ Thông Thái trước khi mở lại 6 sổ. Hành động: Viết prompt yêu cầu AI khóa phạm vi V1.0.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Prompt biến ý tưởng thành MVP' là gì?",
+          "a": "Một ý tưởng lớn cần được ép xuống bản nhỏ dùng được trong 1 ngày."
+        },
+        {
+          "q": "Vì sao bài 'Prompt biến ý tưởng thành MVP' đáng học?",
+          "a": "MVP giúp tránh làm rộng, làm nặng, làm xong không dùng."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Scope Lock."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Viết prompt yêu cầu AI khóa phạm vi V1.0."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Prompt biến ý tưởng thành MVP' nhấn mạnh điều gì?",
+          "choices": [
+            "Một ý tưởng lớn cần được ép xuống bản nhỏ dùng được trong 1 ngày.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Một ý tưởng lớn cần được ép xuống bản nhỏ dùng được trong 1 ngày."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Viết prompt yêu cầu AI khóa phạm vi V1.0.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Viết prompt yêu cầu AI khóa phạm vi V1.0."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Viết prompt yêu cầu AI khóa phạm vi V1.0.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "ai",
+        "mvp",
+        "san-pham"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-prompt-ai-thuc-chien-04",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Prompt AI thực chiến",
+      "level": "intermediate",
+      "title": "Prompt tóm tắt để hành động",
+      "summary": "Tóm tắt tốt phải có: kết luận, việc cần làm, rủi ro, bước tiếp theo. Tóm tắt mà không sinh hành động chỉ là văn bản ngắn hơn.",
+      "coreIdea": "Tóm tắt tốt phải có: kết luận, việc cần làm, rủi ro, bước tiếp theo.",
+      "whyItMatters": "Tóm tắt mà không sinh hành động chỉ là văn bản ngắn hơn.",
+      "mentalModel": "Summary → Decision → Action.",
+      "example": "Tóm tắt bài YouTube thành 3 bài học và 1 checklist.",
+      "action": "Tạo prompt tóm tắt một nguồn học thành checklist.",
+      "content": "Prompt tóm tắt để hành động. Tóm tắt tốt phải có: kết luận, việc cần làm, rủi ro, bước tiếp theo. Tóm tắt mà không sinh hành động chỉ là văn bản ngắn hơn. Mô hình: Summary → Decision → Action.. Ví dụ: Tóm tắt bài YouTube thành 3 bài học và 1 checklist. Hành động: Tạo prompt tóm tắt một nguồn học thành checklist.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Prompt tóm tắt để hành động' là gì?",
+          "a": "Tóm tắt tốt phải có: kết luận, việc cần làm, rủi ro, bước tiếp theo."
+        },
+        {
+          "q": "Vì sao bài 'Prompt tóm tắt để hành động' đáng học?",
+          "a": "Tóm tắt mà không sinh hành động chỉ là văn bản ngắn hơn."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Summary → Decision → Action."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Tạo prompt tóm tắt một nguồn học thành checklist."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Prompt tóm tắt để hành động' nhấn mạnh điều gì?",
+          "choices": [
+            "Tóm tắt tốt phải có: kết luận, việc cần làm, rủi ro, bước tiếp theo.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Tóm tắt tốt phải có: kết luận, việc cần làm, rủi ro, bước tiếp theo."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Tạo prompt tóm tắt một nguồn học thành checklist.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Tạo prompt tóm tắt một nguồn học thành checklist."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Tạo prompt tóm tắt một nguồn học thành checklist.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "ai",
+        "tom-tat",
+        "hanh-dong"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-prompt-ai-thuc-chien-05",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Prompt AI thực chiến",
+      "level": "intermediate",
+      "title": "Prompt học một kỹ năng mới",
+      "summary": "AI có thể thành gia sư nếu ta yêu cầu lộ trình, bài tập và kiểm tra. Học cần chu trình: hiểu, làm, nhận phản hồi, sửa.",
+      "coreIdea": "AI có thể thành gia sư nếu ta yêu cầu lộ trình, bài tập và kiểm tra.",
+      "whyItMatters": "Học cần chu trình: hiểu, làm, nhận phản hồi, sửa.",
+      "mentalModel": "Deliberate Practice.",
+      "example": "Học CSS grid bằng bài tập layout PWA trong 30 phút.",
+      "action": "Nhờ AI tạo lộ trình 7 ngày cho kỹ năng muốn học.",
+      "content": "Prompt học một kỹ năng mới. AI có thể thành gia sư nếu ta yêu cầu lộ trình, bài tập và kiểm tra. Học cần chu trình: hiểu, làm, nhận phản hồi, sửa. Mô hình: Deliberate Practice.. Ví dụ: Học CSS grid bằng bài tập layout PWA trong 30 phút. Hành động: Nhờ AI tạo lộ trình 7 ngày cho kỹ năng muốn học.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Prompt học một kỹ năng mới' là gì?",
+          "a": "AI có thể thành gia sư nếu ta yêu cầu lộ trình, bài tập và kiểm tra."
+        },
+        {
+          "q": "Vì sao bài 'Prompt học một kỹ năng mới' đáng học?",
+          "a": "Học cần chu trình: hiểu, làm, nhận phản hồi, sửa."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Deliberate Practice."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Nhờ AI tạo lộ trình 7 ngày cho kỹ năng muốn học."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Prompt học một kỹ năng mới' nhấn mạnh điều gì?",
+          "choices": [
+            "AI có thể thành gia sư nếu ta yêu cầu lộ trình, bài tập và kiểm tra.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "AI có thể thành gia sư nếu ta yêu cầu lộ trình, bài tập và kiểm tra."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Nhờ AI tạo lộ trình 7 ngày cho kỹ năng muốn học.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Nhờ AI tạo lộ trình 7 ngày cho kỹ năng muốn học."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Nhờ AI tạo lộ trình 7 ngày cho kỹ năng muốn học.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "ai",
+        "tu-hoc",
+        "ky-nang"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-prompt-ai-thuc-chien-06",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Prompt AI thực chiến",
+      "level": "intermediate",
+      "title": "Prompt bàn giao dự án cho AI khác",
+      "summary": "Dự án bền khi có handoff rõ: mục tiêu, file, version, lỗi, quyết định, lệnh deploy. Không bàn giao thì lần sau mất mạch và tốn lại thời gian.",
+      "coreIdea": "Dự án bền khi có handoff rõ: mục tiêu, file, version, lỗi, quyết định, lệnh deploy.",
+      "whyItMatters": "Không bàn giao thì lần sau mất mạch và tốn lại thời gian.",
+      "mentalModel": "Project Memory Pack.",
+      "example": "Tạo AI Handoff Pack cho app trước khi nâng version.",
+      "action": "Viết handoff ngắn cho dự án hiện tại.",
+      "content": "Prompt bàn giao dự án cho AI khác. Dự án bền khi có handoff rõ: mục tiêu, file, version, lỗi, quyết định, lệnh deploy. Không bàn giao thì lần sau mất mạch và tốn lại thời gian. Mô hình: Project Memory Pack.. Ví dụ: Tạo AI Handoff Pack cho app trước khi nâng version. Hành động: Viết handoff ngắn cho dự án hiện tại.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Prompt bàn giao dự án cho AI khác' là gì?",
+          "a": "Dự án bền khi có handoff rõ: mục tiêu, file, version, lỗi, quyết định, lệnh deploy."
+        },
+        {
+          "q": "Vì sao bài 'Prompt bàn giao dự án cho AI khác' đáng học?",
+          "a": "Không bàn giao thì lần sau mất mạch và tốn lại thời gian."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Project Memory Pack."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Viết handoff ngắn cho dự án hiện tại."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Prompt bàn giao dự án cho AI khác' nhấn mạnh điều gì?",
+          "choices": [
+            "Dự án bền khi có handoff rõ: mục tiêu, file, version, lỗi, quyết định, lệnh deploy.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Dự án bền khi có handoff rõ: mục tiêu, file, version, lỗi, quyết định, lệnh deploy."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Viết handoff ngắn cho dự án hiện tại.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Viết handoff ngắn cho dự án hiện tại."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Viết handoff ngắn cho dự án hiện tại.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "ai",
+        "handoff",
+        "du-an"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-tu-duy-phan-bien-01",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Tư duy phản biện",
+      "level": "beginner",
+      "title": "Tách sự kiện khỏi nhận định",
+      "summary": "Sự kiện là điều kiểm chứng được, nhận định là cách ta diễn giải. Nhầm hai thứ này làm quyết định lệch.",
+      "coreIdea": "Sự kiện là điều kiểm chứng được, nhận định là cách ta diễn giải.",
+      "whyItMatters": "Nhầm hai thứ này làm quyết định lệch.",
+      "mentalModel": "Fact vs Interpretation.",
+      "example": "BTC giảm 5% là sự kiện; thị trường sắp sập là nhận định.",
+      "action": "Viết 3 sự kiện và 3 nhận định trong một vấn đề đang quan tâm.",
+      "content": "Tách sự kiện khỏi nhận định. Sự kiện là điều kiểm chứng được, nhận định là cách ta diễn giải. Nhầm hai thứ này làm quyết định lệch. Mô hình: Fact vs Interpretation.. Ví dụ: BTC giảm 5% là sự kiện; thị trường sắp sập là nhận định. Hành động: Viết 3 sự kiện và 3 nhận định trong một vấn đề đang quan tâm.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Tách sự kiện khỏi nhận định' là gì?",
+          "a": "Sự kiện là điều kiểm chứng được, nhận định là cách ta diễn giải."
+        },
+        {
+          "q": "Vì sao bài 'Tách sự kiện khỏi nhận định' đáng học?",
+          "a": "Nhầm hai thứ này làm quyết định lệch."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Fact vs Interpretation."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Viết 3 sự kiện và 3 nhận định trong một vấn đề đang quan tâm."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Tách sự kiện khỏi nhận định' nhấn mạnh điều gì?",
+          "choices": [
+            "Sự kiện là điều kiểm chứng được, nhận định là cách ta diễn giải.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Sự kiện là điều kiểm chứng được, nhận định là cách ta diễn giải."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Viết 3 sự kiện và 3 nhận định trong một vấn đề đang quan tâm.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Viết 3 sự kiện và 3 nhận định trong một vấn đề đang quan tâm."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Viết 3 sự kiện và 3 nhận định trong một vấn đề đang quan tâm.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "tu-duy-phan-bien",
+        "quyet-dinh",
+        "fact"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-tu-duy-phan-bien-02",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Tư duy phản biện",
+      "level": "beginner",
+      "title": "Hỏi: bằng chứng mạnh nhất là gì?",
+      "summary": "Mọi kết luận đều cần mức bằng chứng tương xứng. Tin theo cảm giác dễ dẫn tới FOMO hoặc quyết định vội.",
+      "coreIdea": "Mọi kết luận đều cần mức bằng chứng tương xứng.",
+      "whyItMatters": "Tin theo cảm giác dễ dẫn tới FOMO hoặc quyết định vội.",
+      "mentalModel": "Evidence Ladder.",
+      "example": "Một backtest 20 lệnh chưa đủ kết luận chiến lược sống lâu.",
+      "action": "Ghi lại bằng chứng mạnh/yếu của một niềm tin.",
+      "content": "Hỏi: bằng chứng mạnh nhất là gì?. Mọi kết luận đều cần mức bằng chứng tương xứng. Tin theo cảm giác dễ dẫn tới FOMO hoặc quyết định vội. Mô hình: Evidence Ladder.. Ví dụ: Một backtest 20 lệnh chưa đủ kết luận chiến lược sống lâu. Hành động: Ghi lại bằng chứng mạnh/yếu của một niềm tin.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Hỏi: bằng chứng mạnh nhất là gì?' là gì?",
+          "a": "Mọi kết luận đều cần mức bằng chứng tương xứng."
+        },
+        {
+          "q": "Vì sao bài 'Hỏi: bằng chứng mạnh nhất là gì?' đáng học?",
+          "a": "Tin theo cảm giác dễ dẫn tới FOMO hoặc quyết định vội."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Evidence Ladder."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Ghi lại bằng chứng mạnh/yếu của một niềm tin."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Hỏi: bằng chứng mạnh nhất là gì?' nhấn mạnh điều gì?",
+          "choices": [
+            "Mọi kết luận đều cần mức bằng chứng tương xứng.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Mọi kết luận đều cần mức bằng chứng tương xứng."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Ghi lại bằng chứng mạnh/yếu của một niềm tin.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Ghi lại bằng chứng mạnh/yếu của một niềm tin."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Ghi lại bằng chứng mạnh/yếu của một niềm tin.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "bang-chung",
+        "quyet-dinh",
+        "tu-duy"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-tu-duy-phan-bien-03",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Tư duy phản biện",
+      "level": "intermediate",
+      "title": "Ngụy biện người sống sót",
+      "summary": "Chỉ nhìn người thắng làm ta quên số đông đã thất bại âm thầm. Học sai mẫu thành công có thể nguy hiểm hơn không học.",
+      "coreIdea": "Chỉ nhìn người thắng làm ta quên số đông đã thất bại âm thầm.",
+      "whyItMatters": "Học sai mẫu thành công có thể nguy hiểm hơn không học.",
+      "mentalModel": "Survivorship Bias.",
+      "example": "Chỉ nghe người giàu nhờ trade mà bỏ qua hàng nghìn người cháy tài khoản.",
+      "action": "Tìm phần dữ liệu bị thiếu trong một câu chuyện thành công.",
+      "content": "Ngụy biện người sống sót. Chỉ nhìn người thắng làm ta quên số đông đã thất bại âm thầm. Học sai mẫu thành công có thể nguy hiểm hơn không học. Mô hình: Survivorship Bias.. Ví dụ: Chỉ nghe người giàu nhờ trade mà bỏ qua hàng nghìn người cháy tài khoản. Hành động: Tìm phần dữ liệu bị thiếu trong một câu chuyện thành công.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Ngụy biện người sống sót' là gì?",
+          "a": "Chỉ nhìn người thắng làm ta quên số đông đã thất bại âm thầm."
+        },
+        {
+          "q": "Vì sao bài 'Ngụy biện người sống sót' đáng học?",
+          "a": "Học sai mẫu thành công có thể nguy hiểm hơn không học."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Survivorship Bias."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Tìm phần dữ liệu bị thiếu trong một câu chuyện thành công."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Ngụy biện người sống sót' nhấn mạnh điều gì?",
+          "choices": [
+            "Chỉ nhìn người thắng làm ta quên số đông đã thất bại âm thầm.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Chỉ nhìn người thắng làm ta quên số đông đã thất bại âm thầm."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Tìm phần dữ liệu bị thiếu trong một câu chuyện thành công.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Tìm phần dữ liệu bị thiếu trong một câu chuyện thành công."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Tìm phần dữ liệu bị thiếu trong một câu chuyện thành công.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "nguy-bien",
+        "rui-ro",
+        "quyet-dinh"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-tu-duy-phan-bien-04",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Tư duy phản biện",
+      "level": "intermediate",
+      "title": "Đặt câu hỏi ngược",
+      "summary": "Một ý tưởng tốt phải sống sót khi bị hỏi ngược. Phản biện trước giúp giảm lỗi sau.",
+      "coreIdea": "Một ý tưởng tốt phải sống sót khi bị hỏi ngược.",
+      "whyItMatters": "Phản biện trước giúp giảm lỗi sau.",
+      "mentalModel": "Inversion.",
+      "example": "Thay vì hỏi làm sao thành công, hỏi điều gì khiến app thất bại?",
+      "action": "Viết 5 cách có thể làm hỏng mục tiêu hiện tại.",
+      "content": "Đặt câu hỏi ngược. Một ý tưởng tốt phải sống sót khi bị hỏi ngược. Phản biện trước giúp giảm lỗi sau. Mô hình: Inversion.. Ví dụ: Thay vì hỏi làm sao thành công, hỏi điều gì khiến app thất bại? Hành động: Viết 5 cách có thể làm hỏng mục tiêu hiện tại.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Đặt câu hỏi ngược' là gì?",
+          "a": "Một ý tưởng tốt phải sống sót khi bị hỏi ngược."
+        },
+        {
+          "q": "Vì sao bài 'Đặt câu hỏi ngược' đáng học?",
+          "a": "Phản biện trước giúp giảm lỗi sau."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Inversion."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Viết 5 cách có thể làm hỏng mục tiêu hiện tại."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Đặt câu hỏi ngược' nhấn mạnh điều gì?",
+          "choices": [
+            "Một ý tưởng tốt phải sống sót khi bị hỏi ngược.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Một ý tưởng tốt phải sống sót khi bị hỏi ngược."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Viết 5 cách có thể làm hỏng mục tiêu hiện tại.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Viết 5 cách có thể làm hỏng mục tiêu hiện tại."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Viết 5 cách có thể làm hỏng mục tiêu hiện tại.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "inversion",
+        "tu-duy",
+        "rui-ro"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-tu-duy-phan-bien-05",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Tư duy phản biện",
+      "level": "intermediate",
+      "title": "Ra quyết định khi thiếu dữ liệu",
+      "summary": "Không phải lúc nào cũng có đủ dữ liệu. Khi thiếu dữ liệu, giảm quy mô thử nghiệm. Quyết định nhỏ giúp học nhanh mà không trả giá lớn.",
+      "coreIdea": "Không phải lúc nào cũng có đủ dữ liệu. Khi thiếu dữ liệu, giảm quy mô thử nghiệm.",
+      "whyItMatters": "Quyết định nhỏ giúp học nhanh mà không trả giá lớn.",
+      "mentalModel": "Small Bet.",
+      "example": "Test PWA bằng một nhóm nhỏ trước khi mở public.",
+      "action": "Biến một quyết định lớn thành thử nghiệm nhỏ.",
+      "content": "Ra quyết định khi thiếu dữ liệu. Không phải lúc nào cũng có đủ dữ liệu. Khi thiếu dữ liệu, giảm quy mô thử nghiệm. Quyết định nhỏ giúp học nhanh mà không trả giá lớn. Mô hình: Small Bet.. Ví dụ: Test PWA bằng một nhóm nhỏ trước khi mở public. Hành động: Biến một quyết định lớn thành thử nghiệm nhỏ.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Ra quyết định khi thiếu dữ liệu' là gì?",
+          "a": "Không phải lúc nào cũng có đủ dữ liệu. Khi thiếu dữ liệu, giảm quy mô thử nghiệm."
+        },
+        {
+          "q": "Vì sao bài 'Ra quyết định khi thiếu dữ liệu' đáng học?",
+          "a": "Quyết định nhỏ giúp học nhanh mà không trả giá lớn."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Small Bet."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Biến một quyết định lớn thành thử nghiệm nhỏ."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Ra quyết định khi thiếu dữ liệu' nhấn mạnh điều gì?",
+          "choices": [
+            "Không phải lúc nào cũng có đủ dữ liệu. Khi thiếu dữ liệu, giảm quy mô thử nghiệm.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Không phải lúc nào cũng có đủ dữ liệu. Khi thiếu dữ liệu, giảm quy mô thử nghiệm."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Biến một quyết định lớn thành thử nghiệm nhỏ.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Biến một quyết định lớn thành thử nghiệm nhỏ."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Biến một quyết định lớn thành thử nghiệm nhỏ.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "small-bet",
+        "quyet-dinh",
+        "mvp"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-tu-duy-phan-bien-06",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Tư duy phản biện",
+      "level": "intermediate",
+      "title": "Kiểm tra nguồn trước khi tin",
+      "summary": "Nguồn tốt giúp giảm rác thông tin trong Second Brain. Kho tri thức kém nguồn sẽ làm trí nhớ nhiễu.",
+      "coreIdea": "Nguồn tốt giúp giảm rác thông tin trong Second Brain.",
+      "whyItMatters": "Kho tri thức kém nguồn sẽ làm trí nhớ nhiễu.",
+      "mentalModel": "Source Quality Filter.",
+      "example": "Ưu tiên tài liệu chính thức, sách, dữ liệu gốc hơn bài copy.",
+      "action": "Thêm trường nguồn/link cho 5 note quan trọng.",
+      "content": "Kiểm tra nguồn trước khi tin. Nguồn tốt giúp giảm rác thông tin trong Second Brain. Kho tri thức kém nguồn sẽ làm trí nhớ nhiễu. Mô hình: Source Quality Filter.. Ví dụ: Ưu tiên tài liệu chính thức, sách, dữ liệu gốc hơn bài copy. Hành động: Thêm trường nguồn/link cho 5 note quan trọng.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Kiểm tra nguồn trước khi tin' là gì?",
+          "a": "Nguồn tốt giúp giảm rác thông tin trong Second Brain."
+        },
+        {
+          "q": "Vì sao bài 'Kiểm tra nguồn trước khi tin' đáng học?",
+          "a": "Kho tri thức kém nguồn sẽ làm trí nhớ nhiễu."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Source Quality Filter."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Thêm trường nguồn/link cho 5 note quan trọng."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Kiểm tra nguồn trước khi tin' nhấn mạnh điều gì?",
+          "choices": [
+            "Nguồn tốt giúp giảm rác thông tin trong Second Brain.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Nguồn tốt giúp giảm rác thông tin trong Second Brain."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Thêm trường nguồn/link cho 5 note quan trọng.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Thêm trường nguồn/link cho 5 note quan trọng."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Thêm trường nguồn/link cho 5 note quan trọng.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "source",
+        "tu-duy-phan-bien",
+        "kien-thuc"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-ky-luat-ca-nhan-01",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Kỷ luật cá nhân",
+      "level": "beginner",
+      "title": "Streak là dây neo, không phải xiềng xích",
+      "summary": "Chuỗi ngày giúp giữ nhịp, nhưng không nên biến thành áp lực vô nghĩa. Mục tiêu là quay lại nhanh, không phải hoàn hảo.",
+      "coreIdea": "Chuỗi ngày giúp giữ nhịp, nhưng không nên biến thành áp lực vô nghĩa.",
+      "whyItMatters": "Mục tiêu là quay lại nhanh, không phải hoàn hảo.",
+      "mentalModel": "Never Miss Twice.",
+      "example": "Lỡ một ngày thì hôm sau ghi 1 dòng tối thiểu.",
+      "action": "Tạo quy tắc phục hồi sau ngày bỏ lỡ.",
+      "content": "Streak là dây neo, không phải xiềng xích. Chuỗi ngày giúp giữ nhịp, nhưng không nên biến thành áp lực vô nghĩa. Mục tiêu là quay lại nhanh, không phải hoàn hảo. Mô hình: Never Miss Twice.. Ví dụ: Lỡ một ngày thì hôm sau ghi 1 dòng tối thiểu. Hành động: Tạo quy tắc phục hồi sau ngày bỏ lỡ.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Streak là dây neo, không phải xiềng xích' là gì?",
+          "a": "Chuỗi ngày giúp giữ nhịp, nhưng không nên biến thành áp lực vô nghĩa."
+        },
+        {
+          "q": "Vì sao bài 'Streak là dây neo, không phải xiềng xích' đáng học?",
+          "a": "Mục tiêu là quay lại nhanh, không phải hoàn hảo."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Never Miss Twice."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Tạo quy tắc phục hồi sau ngày bỏ lỡ."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Streak là dây neo, không phải xiềng xích' nhấn mạnh điều gì?",
+          "choices": [
+            "Chuỗi ngày giúp giữ nhịp, nhưng không nên biến thành áp lực vô nghĩa.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Chuỗi ngày giúp giữ nhịp, nhưng không nên biến thành áp lực vô nghĩa."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Tạo quy tắc phục hồi sau ngày bỏ lỡ.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Tạo quy tắc phục hồi sau ngày bỏ lỡ."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Tạo quy tắc phục hồi sau ngày bỏ lỡ.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "streak",
+        "ky-luat",
+        "thoi-quen"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-ky-luat-ca-nhan-02",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Kỷ luật cá nhân",
+      "level": "beginner",
+      "title": "Một ngày chỉ cần một việc chính",
+      "summary": "Quá nhiều ưu tiên nghĩa là không có ưu tiên. Việc chính rõ giúp ngày không trôi trong nhiễu.",
+      "coreIdea": "Quá nhiều ưu tiên nghĩa là không có ưu tiên.",
+      "whyItMatters": "Việc chính rõ giúp ngày không trôi trong nhiễu.",
+      "mentalModel": "One Thing.",
+      "example": "Hôm nay chỉ cần viết README và test app pass.",
+      "action": "Chọn 1 việc chính trước 9 giờ sáng.",
+      "content": "Một ngày chỉ cần một việc chính. Quá nhiều ưu tiên nghĩa là không có ưu tiên. Việc chính rõ giúp ngày không trôi trong nhiễu. Mô hình: One Thing.. Ví dụ: Hôm nay chỉ cần viết README và test app pass. Hành động: Chọn 1 việc chính trước 9 giờ sáng.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Một ngày chỉ cần một việc chính' là gì?",
+          "a": "Quá nhiều ưu tiên nghĩa là không có ưu tiên."
+        },
+        {
+          "q": "Vì sao bài 'Một ngày chỉ cần một việc chính' đáng học?",
+          "a": "Việc chính rõ giúp ngày không trôi trong nhiễu."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "One Thing."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Chọn 1 việc chính trước 9 giờ sáng."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Một ngày chỉ cần một việc chính' nhấn mạnh điều gì?",
+          "choices": [
+            "Quá nhiều ưu tiên nghĩa là không có ưu tiên.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Quá nhiều ưu tiên nghĩa là không có ưu tiên."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Chọn 1 việc chính trước 9 giờ sáng.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Chọn 1 việc chính trước 9 giờ sáng."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Chọn 1 việc chính trước 9 giờ sáng.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "tap-trung",
+        "ky-luat",
+        "cong-viec"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-ky-luat-ca-nhan-03",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Kỷ luật cá nhân",
+      "level": "intermediate",
+      "title": "Thiết kế môi trường thắng ý chí",
+      "summary": "Ý chí yếu đi theo thời gian, môi trường thì luôn đứng đó. Sửa môi trường dễ hơn ép bản thân cố mãi.",
+      "coreIdea": "Ý chí yếu đi theo thời gian, môi trường thì luôn đứng đó.",
+      "whyItMatters": "Sửa môi trường dễ hơn ép bản thân cố mãi.",
+      "mentalModel": "Environment Design.",
+      "example": "Đưa nút Ghi nhanh lên đầu app để giảm ma sát.",
+      "action": "Gỡ một cản trở nhỏ khỏi việc học hôm nay.",
+      "content": "Thiết kế môi trường thắng ý chí. Ý chí yếu đi theo thời gian, môi trường thì luôn đứng đó. Sửa môi trường dễ hơn ép bản thân cố mãi. Mô hình: Environment Design.. Ví dụ: Đưa nút Ghi nhanh lên đầu app để giảm ma sát. Hành động: Gỡ một cản trở nhỏ khỏi việc học hôm nay.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Thiết kế môi trường thắng ý chí' là gì?",
+          "a": "Ý chí yếu đi theo thời gian, môi trường thì luôn đứng đó."
+        },
+        {
+          "q": "Vì sao bài 'Thiết kế môi trường thắng ý chí' đáng học?",
+          "a": "Sửa môi trường dễ hơn ép bản thân cố mãi."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Environment Design."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Gỡ một cản trở nhỏ khỏi việc học hôm nay."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Thiết kế môi trường thắng ý chí' nhấn mạnh điều gì?",
+          "choices": [
+            "Ý chí yếu đi theo thời gian, môi trường thì luôn đứng đó.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Ý chí yếu đi theo thời gian, môi trường thì luôn đứng đó."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Gỡ một cản trở nhỏ khỏi việc học hôm nay.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Gỡ một cản trở nhỏ khỏi việc học hôm nay."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Gỡ một cản trở nhỏ khỏi việc học hôm nay.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "moi-truong",
+        "thoi-quen",
+        "ky-luat"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-ky-luat-ca-nhan-04",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Kỷ luật cá nhân",
+      "level": "intermediate",
+      "title": "Review tuần để không sống mù",
+      "summary": "Không nhìn lại, ta lặp lại lỗi cũ mà không biết. Review biến trải nghiệm thành bài học.",
+      "coreIdea": "Không nhìn lại, ta lặp lại lỗi cũ mà không biết.",
+      "whyItMatters": "Review biến trải nghiệm thành bài học.",
+      "mentalModel": "Feedback Loop.",
+      "example": "Mỗi Chủ nhật xem lại note, hành động, tài chính, quan hệ.",
+      "action": "Viết 3 điều tuần này làm được và 1 điều cần sửa.",
+      "content": "Review tuần để không sống mù. Không nhìn lại, ta lặp lại lỗi cũ mà không biết. Review biến trải nghiệm thành bài học. Mô hình: Feedback Loop.. Ví dụ: Mỗi Chủ nhật xem lại note, hành động, tài chính, quan hệ. Hành động: Viết 3 điều tuần này làm được và 1 điều cần sửa.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Review tuần để không sống mù' là gì?",
+          "a": "Không nhìn lại, ta lặp lại lỗi cũ mà không biết."
+        },
+        {
+          "q": "Vì sao bài 'Review tuần để không sống mù' đáng học?",
+          "a": "Review biến trải nghiệm thành bài học."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Feedback Loop."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Viết 3 điều tuần này làm được và 1 điều cần sửa."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Review tuần để không sống mù' nhấn mạnh điều gì?",
+          "choices": [
+            "Không nhìn lại, ta lặp lại lỗi cũ mà không biết.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Không nhìn lại, ta lặp lại lỗi cũ mà không biết."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Viết 3 điều tuần này làm được và 1 điều cần sửa.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Viết 3 điều tuần này làm được và 1 điều cần sửa."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Viết 3 điều tuần này làm được và 1 điều cần sửa.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "review",
+        "ky-luat",
+        "nhat-ky"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-ky-luat-ca-nhan-05",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Kỷ luật cá nhân",
+      "level": "intermediate",
+      "title": "Năng lượng quan trọng hơn thời gian",
+      "summary": "Có thời gian nhưng kiệt sức thì vẫn không học sâu được. Quản lý năng lượng giúp học đúng giờ vàng.",
+      "coreIdea": "Có thời gian nhưng kiệt sức thì vẫn không học sâu được.",
+      "whyItMatters": "Quản lý năng lượng giúp học đúng giờ vàng.",
+      "mentalModel": "Energy Management.",
+      "example": "Học kiến thức khó vào buổi sáng, xử lý việc nhẹ buổi tối.",
+      "action": "Ghi lại giờ học hiệu quả nhất của bản thân.",
+      "content": "Năng lượng quan trọng hơn thời gian. Có thời gian nhưng kiệt sức thì vẫn không học sâu được. Quản lý năng lượng giúp học đúng giờ vàng. Mô hình: Energy Management.. Ví dụ: Học kiến thức khó vào buổi sáng, xử lý việc nhẹ buổi tối. Hành động: Ghi lại giờ học hiệu quả nhất của bản thân.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Năng lượng quan trọng hơn thời gian' là gì?",
+          "a": "Có thời gian nhưng kiệt sức thì vẫn không học sâu được."
+        },
+        {
+          "q": "Vì sao bài 'Năng lượng quan trọng hơn thời gian' đáng học?",
+          "a": "Quản lý năng lượng giúp học đúng giờ vàng."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Energy Management."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Ghi lại giờ học hiệu quả nhất của bản thân."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Năng lượng quan trọng hơn thời gian' nhấn mạnh điều gì?",
+          "choices": [
+            "Có thời gian nhưng kiệt sức thì vẫn không học sâu được.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Có thời gian nhưng kiệt sức thì vẫn không học sâu được."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Ghi lại giờ học hiệu quả nhất của bản thân.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Ghi lại giờ học hiệu quả nhất của bản thân."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Ghi lại giờ học hiệu quả nhất của bản thân.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "nang-luong",
+        "tu-hoc",
+        "thoi-gian"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-ky-luat-ca-nhan-06",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Kỷ luật cá nhân",
+      "level": "intermediate",
+      "title": "Checklist làm giảm lỗi lặp lại",
+      "summary": "Những lỗi từng xảy ra nên biến thành checklist. Checklist là trí nhớ ngoài cho việc quan trọng.",
+      "coreIdea": "Những lỗi từng xảy ra nên biến thành checklist.",
+      "whyItMatters": "Checklist là trí nhớ ngoài cho việc quan trọng.",
+      "mentalModel": "Error-Proofing.",
+      "example": "Trước khi xuất ZIP: check file, manifest, service worker, validator.",
+      "action": "Tạo checklist 7 bước cho việc hay làm sai.",
+      "content": "Checklist làm giảm lỗi lặp lại. Những lỗi từng xảy ra nên biến thành checklist. Checklist là trí nhớ ngoài cho việc quan trọng. Mô hình: Error-Proofing.. Ví dụ: Trước khi xuất ZIP: check file, manifest, service worker, validator. Hành động: Tạo checklist 7 bước cho việc hay làm sai.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Checklist làm giảm lỗi lặp lại' là gì?",
+          "a": "Những lỗi từng xảy ra nên biến thành checklist."
+        },
+        {
+          "q": "Vì sao bài 'Checklist làm giảm lỗi lặp lại' đáng học?",
+          "a": "Checklist là trí nhớ ngoài cho việc quan trọng."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Error-Proofing."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Tạo checklist 7 bước cho việc hay làm sai."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Checklist làm giảm lỗi lặp lại' nhấn mạnh điều gì?",
+          "choices": [
+            "Những lỗi từng xảy ra nên biến thành checklist.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Những lỗi từng xảy ra nên biến thành checklist."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Tạo checklist 7 bước cho việc hay làm sai.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Tạo checklist 7 bước cho việc hay làm sai."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Tạo checklist 7 bước cho việc hay làm sai.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "checklist",
+        "ky-luat",
+        "he-thong"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-tai-chinh-ca-nhan-thuc-dung-01",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Tài chính cá nhân thực dụng",
+      "level": "beginner",
+      "title": "Dòng tiền là mạch máu tài chính",
+      "summary": "Tài sản tăng chậm nếu dòng tiền âm hoặc không rõ. Trước khi đầu tư mạnh, cần biết tiền vào ra mỗi tháng.",
+      "coreIdea": "Tài sản tăng chậm nếu dòng tiền âm hoặc không rõ.",
+      "whyItMatters": "Trước khi đầu tư mạnh, cần biết tiền vào ra mỗi tháng.",
+      "mentalModel": "Cashflow First.",
+      "example": "Thu 500, chi 430, tiết kiệm 70; con số này quan trọng hơn cảm giác giàu.",
+      "action": "Ghi 3 khoản chi lớn nhất tháng này.",
+      "content": "Dòng tiền là mạch máu tài chính. Tài sản tăng chậm nếu dòng tiền âm hoặc không rõ. Trước khi đầu tư mạnh, cần biết tiền vào ra mỗi tháng. Mô hình: Cashflow First.. Ví dụ: Thu 500, chi 430, tiết kiệm 70; con số này quan trọng hơn cảm giác giàu. Hành động: Ghi 3 khoản chi lớn nhất tháng này.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Dòng tiền là mạch máu tài chính' là gì?",
+          "a": "Tài sản tăng chậm nếu dòng tiền âm hoặc không rõ."
+        },
+        {
+          "q": "Vì sao bài 'Dòng tiền là mạch máu tài chính' đáng học?",
+          "a": "Trước khi đầu tư mạnh, cần biết tiền vào ra mỗi tháng."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Cashflow First."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Ghi 3 khoản chi lớn nhất tháng này."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Dòng tiền là mạch máu tài chính' nhấn mạnh điều gì?",
+          "choices": [
+            "Tài sản tăng chậm nếu dòng tiền âm hoặc không rõ.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Tài sản tăng chậm nếu dòng tiền âm hoặc không rõ."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Ghi 3 khoản chi lớn nhất tháng này.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Ghi 3 khoản chi lớn nhất tháng này."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Ghi 3 khoản chi lớn nhất tháng này.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "tai-chinh",
+        "dong-tien",
+        "tiet-kiem"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-tai-chinh-ca-nhan-thuc-dung-02",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Tài chính cá nhân thực dụng",
+      "level": "beginner",
+      "title": "Quỹ dự phòng là quyền được bình tĩnh",
+      "summary": "Có dự phòng giúp không bán tài sản lúc xấu nhất. Thiếu tiền mặt làm quyết định đầu tư bị ép buộc.",
+      "coreIdea": "Có dự phòng giúp không bán tài sản lúc xấu nhất.",
+      "whyItMatters": "Thiếu tiền mặt làm quyết định đầu tư bị ép buộc.",
+      "mentalModel": "Reserve Buffer.",
+      "example": "Giữ 3-6 tháng chi phí hoặc tỷ lệ tối thiểu theo hoàn cảnh.",
+      "action": "Tính quỹ dự phòng tối thiểu của bản thân.",
+      "content": "Quỹ dự phòng là quyền được bình tĩnh. Có dự phòng giúp không bán tài sản lúc xấu nhất. Thiếu tiền mặt làm quyết định đầu tư bị ép buộc. Mô hình: Reserve Buffer.. Ví dụ: Giữ 3-6 tháng chi phí hoặc tỷ lệ tối thiểu theo hoàn cảnh. Hành động: Tính quỹ dự phòng tối thiểu của bản thân.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Quỹ dự phòng là quyền được bình tĩnh' là gì?",
+          "a": "Có dự phòng giúp không bán tài sản lúc xấu nhất."
+        },
+        {
+          "q": "Vì sao bài 'Quỹ dự phòng là quyền được bình tĩnh' đáng học?",
+          "a": "Thiếu tiền mặt làm quyết định đầu tư bị ép buộc."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Reserve Buffer."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Tính quỹ dự phòng tối thiểu của bản thân."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Quỹ dự phòng là quyền được bình tĩnh' nhấn mạnh điều gì?",
+          "choices": [
+            "Có dự phòng giúp không bán tài sản lúc xấu nhất.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Có dự phòng giúp không bán tài sản lúc xấu nhất."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Tính quỹ dự phòng tối thiểu của bản thân.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Tính quỹ dự phòng tối thiểu của bản thân."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Tính quỹ dự phòng tối thiểu của bản thân.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "tai-chinh",
+        "du-phong",
+        "rui-ro"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-tai-chinh-ca-nhan-thuc-dung-03",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Tài chính cá nhân thực dụng",
+      "level": "intermediate",
+      "title": "Đầu tư dài hạn cần quy tắc chống FOMO",
+      "summary": "Không có quy tắc, cảm xúc sẽ mua đỉnh bán đáy. FOMO là thuế của người thiếu hệ thống.",
+      "coreIdea": "Không có quy tắc, cảm xúc sẽ mua đỉnh bán đáy.",
+      "whyItMatters": "FOMO là thuế của người thiếu hệ thống.",
+      "mentalModel": "Rule-Based Investing.",
+      "example": "BTC tăng mạnh thì giảm tốc mua đuổi, giữ thang limit đã định.",
+      "action": "Viết quy tắc mua/bán trước khi thị trường biến động.",
+      "content": "Đầu tư dài hạn cần quy tắc chống FOMO. Không có quy tắc, cảm xúc sẽ mua đỉnh bán đáy. FOMO là thuế của người thiếu hệ thống. Mô hình: Rule-Based Investing.. Ví dụ: BTC tăng mạnh thì giảm tốc mua đuổi, giữ thang limit đã định. Hành động: Viết quy tắc mua/bán trước khi thị trường biến động.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Đầu tư dài hạn cần quy tắc chống FOMO' là gì?",
+          "a": "Không có quy tắc, cảm xúc sẽ mua đỉnh bán đáy."
+        },
+        {
+          "q": "Vì sao bài 'Đầu tư dài hạn cần quy tắc chống FOMO' đáng học?",
+          "a": "FOMO là thuế của người thiếu hệ thống."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Rule-Based Investing."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Viết quy tắc mua/bán trước khi thị trường biến động."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Đầu tư dài hạn cần quy tắc chống FOMO' nhấn mạnh điều gì?",
+          "choices": [
+            "Không có quy tắc, cảm xúc sẽ mua đỉnh bán đáy.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Không có quy tắc, cảm xúc sẽ mua đỉnh bán đáy."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Viết quy tắc mua/bán trước khi thị trường biến động.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Viết quy tắc mua/bán trước khi thị trường biến động."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Viết quy tắc mua/bán trước khi thị trường biến động.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "dau-tu",
+        "fomo",
+        "btc"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-tai-chinh-ca-nhan-thuc-dung-04",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Tài chính cá nhân thực dụng",
+      "level": "intermediate",
+      "title": "Tài sản ròng là bảng điểm chậm",
+      "summary": "Net worth tăng chậm nhưng phản ánh sức khỏe dài hạn. Đừng bị nhiễu bởi biến động ngày nếu mục tiêu là 5-10 năm.",
+      "coreIdea": "Net worth tăng chậm nhưng phản ánh sức khỏe dài hạn.",
+      "whyItMatters": "Đừng bị nhiễu bởi biến động ngày nếu mục tiêu là 5-10 năm.",
+      "mentalModel": "Long-Term Scoreboard.",
+      "example": "Theo dõi BTC net growth hoặc tài sản ròng theo tháng.",
+      "action": "Cập nhật bảng tài sản ròng tháng này.",
+      "content": "Tài sản ròng là bảng điểm chậm. Net worth tăng chậm nhưng phản ánh sức khỏe dài hạn. Đừng bị nhiễu bởi biến động ngày nếu mục tiêu là 5-10 năm. Mô hình: Long-Term Scoreboard.. Ví dụ: Theo dõi BTC net growth hoặc tài sản ròng theo tháng. Hành động: Cập nhật bảng tài sản ròng tháng này.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Tài sản ròng là bảng điểm chậm' là gì?",
+          "a": "Net worth tăng chậm nhưng phản ánh sức khỏe dài hạn."
+        },
+        {
+          "q": "Vì sao bài 'Tài sản ròng là bảng điểm chậm' đáng học?",
+          "a": "Đừng bị nhiễu bởi biến động ngày nếu mục tiêu là 5-10 năm."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Long-Term Scoreboard."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Cập nhật bảng tài sản ròng tháng này."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Tài sản ròng là bảng điểm chậm' nhấn mạnh điều gì?",
+          "choices": [
+            "Net worth tăng chậm nhưng phản ánh sức khỏe dài hạn.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Net worth tăng chậm nhưng phản ánh sức khỏe dài hạn."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Cập nhật bảng tài sản ròng tháng này.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Cập nhật bảng tài sản ròng tháng này."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Cập nhật bảng tài sản ròng tháng này.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "tai-san-rong",
+        "dau-tu",
+        "dai-han"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-tai-chinh-ca-nhan-thuc-dung-05",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Tài chính cá nhân thực dụng",
+      "level": "intermediate",
+      "title": "Nợ xấu ăn tương lai",
+      "summary": "Nợ tiêu dùng lãi cao lấy tiền của phiên bản tương lai của mình. Trả nợ xấu là khoản đầu tư chắc chắn vào sự bình an.",
+      "coreIdea": "Nợ tiêu dùng lãi cao lấy tiền của phiên bản tương lai của mình.",
+      "whyItMatters": "Trả nợ xấu là khoản đầu tư chắc chắn vào sự bình an.",
+      "mentalModel": "Debt Snowball/Avalanche.",
+      "example": "Ưu tiên nợ lãi cao trước khi tăng đầu tư rủi ro.",
+      "action": "Liệt kê nợ theo lãi suất và hạn trả.",
+      "content": "Nợ xấu ăn tương lai. Nợ tiêu dùng lãi cao lấy tiền của phiên bản tương lai của mình. Trả nợ xấu là khoản đầu tư chắc chắn vào sự bình an. Mô hình: Debt Snowball/Avalanche.. Ví dụ: Ưu tiên nợ lãi cao trước khi tăng đầu tư rủi ro. Hành động: Liệt kê nợ theo lãi suất và hạn trả.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Nợ xấu ăn tương lai' là gì?",
+          "a": "Nợ tiêu dùng lãi cao lấy tiền của phiên bản tương lai của mình."
+        },
+        {
+          "q": "Vì sao bài 'Nợ xấu ăn tương lai' đáng học?",
+          "a": "Trả nợ xấu là khoản đầu tư chắc chắn vào sự bình an."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Debt Snowball/Avalanche."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Liệt kê nợ theo lãi suất và hạn trả."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Nợ xấu ăn tương lai' nhấn mạnh điều gì?",
+          "choices": [
+            "Nợ tiêu dùng lãi cao lấy tiền của phiên bản tương lai của mình.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Nợ tiêu dùng lãi cao lấy tiền của phiên bản tương lai của mình."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Liệt kê nợ theo lãi suất và hạn trả.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Liệt kê nợ theo lãi suất và hạn trả."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Liệt kê nợ theo lãi suất và hạn trả.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "no",
+        "tai-chinh",
+        "rui-ro"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-tai-chinh-ca-nhan-thuc-dung-06",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Tài chính cá nhân thực dụng",
+      "level": "intermediate",
+      "title": "Tự động hóa khoản tốt",
+      "summary": "Điều tốt nên được tự động hóa để không phụ thuộc tâm trạng. DCA, tiết kiệm, backup dữ liệu đều cần lịch cố định.",
+      "coreIdea": "Điều tốt nên được tự động hóa để không phụ thuộc tâm trạng.",
+      "whyItMatters": "DCA, tiết kiệm, backup dữ liệu đều cần lịch cố định.",
+      "mentalModel": "Automation.",
+      "example": "Mỗi ngày mua BTC nhỏ hoặc mỗi tuần export JSON backup.",
+      "action": "Đặt lịch cố định cho một hành vi tài chính tốt.",
+      "content": "Tự động hóa khoản tốt. Điều tốt nên được tự động hóa để không phụ thuộc tâm trạng. DCA, tiết kiệm, backup dữ liệu đều cần lịch cố định. Mô hình: Automation.. Ví dụ: Mỗi ngày mua BTC nhỏ hoặc mỗi tuần export JSON backup. Hành động: Đặt lịch cố định cho một hành vi tài chính tốt.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Tự động hóa khoản tốt' là gì?",
+          "a": "Điều tốt nên được tự động hóa để không phụ thuộc tâm trạng."
+        },
+        {
+          "q": "Vì sao bài 'Tự động hóa khoản tốt' đáng học?",
+          "a": "DCA, tiết kiệm, backup dữ liệu đều cần lịch cố định."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Automation."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Đặt lịch cố định cho một hành vi tài chính tốt."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Tự động hóa khoản tốt' nhấn mạnh điều gì?",
+          "choices": [
+            "Điều tốt nên được tự động hóa để không phụ thuộc tâm trạng.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Điều tốt nên được tự động hóa để không phụ thuộc tâm trạng."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Đặt lịch cố định cho một hành vi tài chính tốt.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Đặt lịch cố định cho một hành vi tài chính tốt."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Đặt lịch cố định cho một hành vi tài chính tốt.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "tu-dong-hoa",
+        "dca",
+        "tai-chinh"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-mini-app-pwa-01",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Mini App & PWA",
+      "level": "beginner",
+      "title": "MVP phải giải quyết một việc chính",
+      "summary": "App nhỏ thành công vì làm rõ một việc, không phải vì nhiều nút. Phạm vi hẹp giúp test nhanh và sửa đúng.",
+      "coreIdea": "App nhỏ thành công vì làm rõ một việc, không phải vì nhiều nút.",
+      "whyItMatters": "Phạm vi hẹp giúp test nhanh và sửa đúng.",
+      "mentalModel": "Single Job To Be Done.",
+      "example": "Sổ Thông Thái tập trung học kiến thức trước, chưa mở lại 6 sổ.",
+      "action": "Viết một câu: app này mở lên để làm gì?",
+      "content": "MVP phải giải quyết một việc chính. App nhỏ thành công vì làm rõ một việc, không phải vì nhiều nút. Phạm vi hẹp giúp test nhanh và sửa đúng. Mô hình: Single Job To Be Done.. Ví dụ: Sổ Thông Thái tập trung học kiến thức trước, chưa mở lại 6 sổ. Hành động: Viết một câu: app này mở lên để làm gì?",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'MVP phải giải quyết một việc chính' là gì?",
+          "a": "App nhỏ thành công vì làm rõ một việc, không phải vì nhiều nút."
+        },
+        {
+          "q": "Vì sao bài 'MVP phải giải quyết một việc chính' đáng học?",
+          "a": "Phạm vi hẹp giúp test nhanh và sửa đúng."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Single Job To Be Done."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Viết một câu: app này mở lên để làm gì?"
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'MVP phải giải quyết một việc chính' nhấn mạnh điều gì?",
+          "choices": [
+            "App nhỏ thành công vì làm rõ một việc, không phải vì nhiều nút.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "App nhỏ thành công vì làm rõ một việc, không phải vì nhiều nút."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Viết một câu: app này mở lên để làm gì?",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Viết một câu: app này mở lên để làm gì?"
+        }
+      ],
+      "actions": [
+        {
+          "text": "Viết một câu: app này mở lên để làm gì?",
+          "done": false
+        }
+      ],
+      "tags": [
+        "mvp",
+        "pwa",
+        "san-pham"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-mini-app-pwa-02",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Mini App & PWA",
+      "level": "beginner",
+      "title": "Offline-first là niềm tin của người dùng",
+      "summary": "App còn chạy khi mất mạng tạo cảm giác chắc chắn. Dữ liệu học tập cá nhân không nên phụ thuộc mạng ngay từ đầu.",
+      "coreIdea": "App còn chạy khi mất mạng tạo cảm giác chắc chắn.",
+      "whyItMatters": "Dữ liệu học tập cá nhân không nên phụ thuộc mạng ngay từ đầu.",
+      "mentalModel": "Local First.",
+      "example": "PWA cache shell, records lưu IndexedDB, public library cache local.",
+      "action": "Kiểm tra app ở chế độ offline sau lần mở đầu.",
+      "content": "Offline-first là niềm tin của người dùng. App còn chạy khi mất mạng tạo cảm giác chắc chắn. Dữ liệu học tập cá nhân không nên phụ thuộc mạng ngay từ đầu. Mô hình: Local First.. Ví dụ: PWA cache shell, records lưu IndexedDB, public library cache local. Hành động: Kiểm tra app ở chế độ offline sau lần mở đầu.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Offline-first là niềm tin của người dùng' là gì?",
+          "a": "App còn chạy khi mất mạng tạo cảm giác chắc chắn."
+        },
+        {
+          "q": "Vì sao bài 'Offline-first là niềm tin của người dùng' đáng học?",
+          "a": "Dữ liệu học tập cá nhân không nên phụ thuộc mạng ngay từ đầu."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Local First."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Kiểm tra app ở chế độ offline sau lần mở đầu."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Offline-first là niềm tin của người dùng' nhấn mạnh điều gì?",
+          "choices": [
+            "App còn chạy khi mất mạng tạo cảm giác chắc chắn.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "App còn chạy khi mất mạng tạo cảm giác chắc chắn."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Kiểm tra app ở chế độ offline sau lần mở đầu.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Kiểm tra app ở chế độ offline sau lần mở đầu."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Kiểm tra app ở chế độ offline sau lần mở đầu.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "offline-first",
+        "pwa",
+        "indexeddb"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-mini-app-pwa-03",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Mini App & PWA",
+      "level": "intermediate",
+      "title": "Export/import là cửa thoát hiểm dữ liệu",
+      "summary": "Người dùng chỉ tin app lâu dài khi có đường mang dữ liệu đi. Không có export là nhốt dữ liệu.",
+      "coreIdea": "Người dùng chỉ tin app lâu dài khi có đường mang dữ liệu đi.",
+      "whyItMatters": "Không có export là nhốt dữ liệu.",
+      "mentalModel": "Data Portability.",
+      "example": "Xuất JSON định kỳ và lưu Google Drive.",
+      "action": "Test export/import bằng một file backup nhỏ.",
+      "content": "Export/import là cửa thoát hiểm dữ liệu. Người dùng chỉ tin app lâu dài khi có đường mang dữ liệu đi. Không có export là nhốt dữ liệu. Mô hình: Data Portability.. Ví dụ: Xuất JSON định kỳ và lưu Google Drive. Hành động: Test export/import bằng một file backup nhỏ.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Export/import là cửa thoát hiểm dữ liệu' là gì?",
+          "a": "Người dùng chỉ tin app lâu dài khi có đường mang dữ liệu đi."
+        },
+        {
+          "q": "Vì sao bài 'Export/import là cửa thoát hiểm dữ liệu' đáng học?",
+          "a": "Không có export là nhốt dữ liệu."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Data Portability."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Test export/import bằng một file backup nhỏ."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Export/import là cửa thoát hiểm dữ liệu' nhấn mạnh điều gì?",
+          "choices": [
+            "Người dùng chỉ tin app lâu dài khi có đường mang dữ liệu đi.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Người dùng chỉ tin app lâu dài khi có đường mang dữ liệu đi."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Test export/import bằng một file backup nhỏ.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Test export/import bằng một file backup nhỏ."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Test export/import bằng một file backup nhỏ.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "backup",
+        "export",
+        "json"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-mini-app-pwa-04",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Mini App & PWA",
+      "level": "intermediate",
+      "title": "Validator giúp app không lỗi ngớ ngẩn",
+      "summary": "Test script bắt lỗi cấu trúc trước khi deploy. Một lỗi manifest hoặc service worker có thể làm app PWA mất ổn định.",
+      "coreIdea": "Test script bắt lỗi cấu trúc trước khi deploy.",
+      "whyItMatters": "Một lỗi manifest hoặc service worker có thể làm app PWA mất ổn định.",
+      "mentalModel": "Shift Left Testing.",
+      "example": "npm run validate kiểm tra file, cache version, public JSON.",
+      "action": "Chạy validator trước mỗi ZIP.",
+      "content": "Validator giúp app không lỗi ngớ ngẩn. Test script bắt lỗi cấu trúc trước khi deploy. Một lỗi manifest hoặc service worker có thể làm app PWA mất ổn định. Mô hình: Shift Left Testing.. Ví dụ: npm run validate kiểm tra file, cache version, public JSON. Hành động: Chạy validator trước mỗi ZIP.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Validator giúp app không lỗi ngớ ngẩn' là gì?",
+          "a": "Test script bắt lỗi cấu trúc trước khi deploy."
+        },
+        {
+          "q": "Vì sao bài 'Validator giúp app không lỗi ngớ ngẩn' đáng học?",
+          "a": "Một lỗi manifest hoặc service worker có thể làm app PWA mất ổn định."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Shift Left Testing."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Chạy validator trước mỗi ZIP."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Validator giúp app không lỗi ngớ ngẩn' nhấn mạnh điều gì?",
+          "choices": [
+            "Test script bắt lỗi cấu trúc trước khi deploy.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Test script bắt lỗi cấu trúc trước khi deploy."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Chạy validator trước mỗi ZIP.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Chạy validator trước mỗi ZIP."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Chạy validator trước mỗi ZIP.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "validator",
+        "test",
+        "deploy"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-mini-app-pwa-05",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Mini App & PWA",
+      "level": "intermediate",
+      "title": "Public JSON là thư viện chung đơn giản",
+      "summary": "GitHub lưu file data public để app tĩnh tự tải. Không cần backend nếu chỉ muốn ai có link đều đọc dữ liệu hiện tại.",
+      "coreIdea": "GitHub lưu file data public để app tĩnh tự tải.",
+      "whyItMatters": "Không cần backend nếu chỉ muốn ai có link đều đọc dữ liệu hiện tại.",
+      "mentalModel": "Static Data Source.",
+      "example": "data/wisdom-public.json chứa bài học công khai, app tự sync khi mở.",
+      "action": "Cập nhật publicDataVersion khi sửa dữ liệu.",
+      "content": "Public JSON là thư viện chung đơn giản. GitHub lưu file data public để app tĩnh tự tải. Không cần backend nếu chỉ muốn ai có link đều đọc dữ liệu hiện tại. Mô hình: Static Data Source.. Ví dụ: data/wisdom-public.json chứa bài học công khai, app tự sync khi mở. Hành động: Cập nhật publicDataVersion khi sửa dữ liệu.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Public JSON là thư viện chung đơn giản' là gì?",
+          "a": "GitHub lưu file data public để app tĩnh tự tải."
+        },
+        {
+          "q": "Vì sao bài 'Public JSON là thư viện chung đơn giản' đáng học?",
+          "a": "Không cần backend nếu chỉ muốn ai có link đều đọc dữ liệu hiện tại."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Static Data Source."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Cập nhật publicDataVersion khi sửa dữ liệu."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Public JSON là thư viện chung đơn giản' nhấn mạnh điều gì?",
+          "choices": [
+            "GitHub lưu file data public để app tĩnh tự tải.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "GitHub lưu file data public để app tĩnh tự tải."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Cập nhật publicDataVersion khi sửa dữ liệu.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Cập nhật publicDataVersion khi sửa dữ liệu."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Cập nhật publicDataVersion khi sửa dữ liệu.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "github",
+        "public-data",
+        "pwa"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    },
+    {
+      "id": "pub-mini-app-pwa-06",
+      "source": "public",
+      "type": "lesson",
+      "category": "lesson",
+      "track": "Mini App & PWA",
+      "level": "intermediate",
+      "title": "Không cho public edit khi chưa có backend",
+      "summary": "Ai cũng sửa được nghĩa là ai cũng có thể phá dữ liệu. Phân quyền và chống xung đột cần backend hoặc quy trình duyệt.",
+      "coreIdea": "Ai cũng sửa được nghĩa là ai cũng có thể phá dữ liệu.",
+      "whyItMatters": "Phân quyền và chống xung đột cần backend hoặc quy trình duyệt.",
+      "mentalModel": "Read Public, Write Private.",
+      "example": "Kho chung chỉ đọc; người dùng lưu riêng để chỉnh sửa.",
+      "action": "Ghi nguyên tắc quyền dữ liệu vào README.",
+      "content": "Không cho public edit khi chưa có backend. Ai cũng sửa được nghĩa là ai cũng có thể phá dữ liệu. Phân quyền và chống xung đột cần backend hoặc quy trình duyệt. Mô hình: Read Public, Write Private.. Ví dụ: Kho chung chỉ đọc; người dùng lưu riêng để chỉnh sửa. Hành động: Ghi nguyên tắc quyền dữ liệu vào README.",
+      "flashcards": [
+        {
+          "q": "Ý chính của bài 'Không cho public edit khi chưa có backend' là gì?",
+          "a": "Ai cũng sửa được nghĩa là ai cũng có thể phá dữ liệu."
+        },
+        {
+          "q": "Vì sao bài 'Không cho public edit khi chưa có backend' đáng học?",
+          "a": "Phân quyền và chống xung đột cần backend hoặc quy trình duyệt."
+        },
+        {
+          "q": "Mô hình tư duy liên quan là gì?",
+          "a": "Read Public, Write Private."
+        },
+        {
+          "q": "Hành động nhỏ sau bài này là gì?",
+          "a": "Ghi nguyên tắc quyền dữ liệu vào README."
+        }
+      ],
+      "quiz": [
+        {
+          "q": "Bài 'Không cho public edit khi chưa có backend' nhấn mạnh điều gì?",
+          "choices": [
+            "Ai cũng sửa được nghĩa là ai cũng có thể phá dữ liệu.",
+            "Ghi càng nhiều càng tốt",
+            "Không cần ôn lại",
+            "Chỉ lưu link là đủ"
+          ],
+          "answer": "Ai cũng sửa được nghĩa là ai cũng có thể phá dữ liệu."
+        },
+        {
+          "q": "Bước đúng sau khi học là gì?",
+          "choices": [
+            "Ghi nguyên tắc quyền dữ liệu vào README.",
+            "Đóng app ngay",
+            "Lưu rồi bỏ quên",
+            "Xóa nguồn"
+          ],
+          "answer": "Ghi nguyên tắc quyền dữ liệu vào README."
+        }
+      ],
+      "actions": [
+        {
+          "text": "Ghi nguyên tắc quyền dữ liệu vào README.",
+          "done": false
+        }
+      ],
+      "tags": [
+        "bao-mat",
+        "quyen-du-lieu",
+        "pwa"
+      ],
+      "createdAt": "2026-06-28T00:00:00.000+07:00"
+    }
+  ]
+}

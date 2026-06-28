@@ -4,22 +4,22 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <meta name="theme-color" content="#0b1020">
-  <meta name="description" content="Sổ Thông Thái Learning Pro - PWA offline-first để học kiến thức mới, chưng cất bài học, ôn tập flashcard và biến tri thức thành hành động.">
-  <title>Sổ Thông Thái · Learning Pro</title>
+  <meta name="description" content="Sổ Thông Thái Public Learning Library Pro - PWA học tập offline-first, tự đồng bộ kho tri thức public, lịch âm dương, slogan theo ngữ cảnh, ôn tập và quiz.">
+  <title>Sổ Thông Thái · Public Learning Library Pro</title>
   <link rel="manifest" href="manifest.json">
   <link rel="icon" href="icon.svg" type="image/svg+xml">
   <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <noscript>Ứng dụng cần JavaScript để lưu dữ liệu trên thiết bị.</noscript>
+  <noscript>Ứng dụng cần JavaScript để lưu và đồng bộ dữ liệu trên thiết bị.</noscript>
 
-  <div id="app" class="app-shell" data-app-version="1.2.0">
+  <div id="app" class="app-shell" data-app-version="1.3.0">
     <header class="hero">
       <nav class="topbar" aria-label="Thanh điều hướng chính">
         <div class="brand">
           <div class="brand-mark" aria-hidden="true">慧</div>
           <div>
-            <p class="eyebrow">Wisdom Notebook · Learning Pro V1.2.0</p>
+            <p class="eyebrow">Wisdom Notebook · V1.3.0 Public Learning Library Pro</p>
             <h1>Sổ Thông Thái</h1>
           </div>
         </div>
@@ -31,33 +31,51 @@
 
       <section class="hero-grid">
         <div class="hero-copy">
-          <p class="kicker">Không phải note. Đây là bàn học cá nhân offline.</p>
-          <h2>Biến kiến thức mới thành <span>bài học, flashcard, quiz và hành động.</span></h2>
-          <p class="subtitle">Mỗi ghi chú đi qua 4 bước: Capture → Distill → Practice → Apply. Mở lại app là biết hôm nay cần học gì, ôn gì, làm gì.</p>
+          <div class="time-card" aria-label="Ngày giờ hiện tại">
+            <div>
+              <span class="label">Dương lịch</span>
+              <strong id="solarDate">--</strong>
+              <small id="clockText">--:--:--</small>
+            </div>
+            <div>
+              <span class="label">Âm lịch Việt Nam</span>
+              <strong id="lunarDate">--</strong>
+              <small id="lunarYearText">--</small>
+            </div>
+          </div>
+
+          <p class="kicker">Kho chung để mở đường · Kho riêng để giữ mình</p>
+          <h2 id="contextSlogan">Ghi ít nhưng đúng, nhớ lâu và dùng được.</h2>
+          <p id="sloganContext" class="subtitle">Slogan của Lão sẽ đổi theo bối cảnh note gần nhất và nhịp học hôm nay.</p>
           <div class="hero-actions">
-            <a href="#capture" class="button primary">+ Ghi kiến thức mới</a>
-            <button class="button secondary" id="startReview" type="button">Bắt đầu ôn tập</button>
-            <button class="button ghost" id="openCommand" type="button">Bảng điều khiển</button>
+            <button class="button primary" id="learnToday" type="button">Học bài hôm nay</button>
+            <button class="button secondary" id="syncNowHero" type="button">Đồng bộ kho chung</button>
+            <button class="button ghost" id="captureNow" type="button">+ Ghi kiến thức mới</button>
           </div>
         </div>
-        <aside class="mission-card" aria-label="Nhiệm vụ học hôm nay">
+
+        <aside class="mission-card" aria-label="Gợi ý không lặp trong ngày">
           <div class="mission-head">
-            <p class="eyebrow">Nhiệm vụ hôm nay</p>
-            <span id="stateBadge" class="state-badge empty">EMPTY</span>
+            <p class="eyebrow">Gợi ý lại hôm nay</p>
+            <span id="stateBadge" class="state-badge empty">LOCAL_ONLY</span>
           </div>
-          <h3 id="dailyMission">Lưu 1 kiến thức đáng dùng lại.</h3>
-          <p id="stateExplain" class="muted">Chưa có dữ liệu học tập.</p>
-          <div class="progress-ring" aria-hidden="true"><span id="learningScore">0</span><small>/100</small></div>
-          <p id="stateSlogan" class="slogan">Một dòng hôm nay, một kho báu ngày mai.</p>
+          <h3 id="dailyPickTitle">Đang chọn một note chưa lặp trong ngày...</h3>
+          <p id="dailyPickSummary" class="muted">Mỗi lần mở app, hệ thống chọn một bài/note khác nhau. Hết lượt thì sẽ báo rõ.</p>
+          <div class="mission-actions">
+            <button class="button primary small" id="openDailyPick" type="button">Mở gợi ý</button>
+            <button class="button ghost small" id="skipDailyPick" type="button">Gợi ý khác</button>
+          </div>
+          <p id="stateSlogan" class="slogan">Tri thức hay phải có đường đi, có ôn lại, có việc làm.</p>
         </aside>
       </section>
 
       <section class="metric-grid" aria-label="Chỉ số học tập">
-        <article class="metric"><span>📚</span><p>Tri thức</p><strong id="metricTotal">0</strong></article>
+        <article class="metric"><span>🌐</span><p>Kho chung</p><strong id="metricPublic">0</strong></article>
+        <article class="metric"><span>✍️</span><p>Kho riêng</p><strong id="metricLocal">0</strong></article>
         <article class="metric"><span>🧠</span><p>Cần ôn</p><strong id="metricDue">0</strong></article>
         <article class="metric"><span>⚡</span><p>Hành động</p><strong id="metricActions">0</strong></article>
         <article class="metric"><span>🔥</span><p>Streak</p><strong id="metricStreak">0</strong></article>
-        <article class="metric"><span>🏆</span><p>Mastery</p><strong id="metricMastery">0%</strong></article>
+        <article class="metric"><span>🕸️</span><p>Tag</p><strong id="metricTags">0</strong></article>
       </section>
     </header>
 
@@ -71,61 +89,119 @@
         </div>
         <nav class="nav-tabs" aria-label="Chế độ xem">
           <button class="nav-tab active" type="button" data-view="today">🏠 Hôm nay</button>
-          <button class="nav-tab" type="button" data-view="capture">✍️ Ghi & chưng cất</button>
           <button class="nav-tab" type="button" data-view="library">📚 Thư viện</button>
-          <button class="nav-tab" type="button" data-view="studio">🧪 Distill Studio</button>
+          <button class="nav-tab" type="button" data-view="reader">📖 Bàn học</button>
+          <button class="nav-tab" type="button" data-view="capture">✍️ Ghi mới</button>
           <button class="nav-tab" type="button" data-view="review">🧠 Ôn tập</button>
           <button class="nav-tab" type="button" data-view="quiz">🎯 Quiz</button>
           <button class="nav-tab" type="button" data-view="actions">⚡ Hành động</button>
-          <button class="nav-tab" type="button" data-view="paths">🛤️ Lộ trình</button>
-          <button class="nav-tab" type="button" data-view="map">🕸️ Bản đồ tag</button>
+          <button class="nav-tab" type="button" data-view="map">🕸️ Bản đồ</button>
+          <button class="nav-tab" type="button" data-view="sync">🔄 Đồng bộ</button>
         </nav>
 
         <div class="quick-tools">
           <button class="button full secondary" id="exportJson" type="button">Xuất JSON</button>
           <button class="button full ghost" id="importButton" type="button">Nhập JSON</button>
           <input id="importFile" class="hidden" type="file" accept="application/json,.json">
-          <button class="button full ghost danger" id="resetData" type="button">Reset dữ liệu</button>
+          <button class="button full ghost danger" id="resetData" type="button">Reset kho riêng</button>
         </div>
       </aside>
 
       <section class="workspace">
         <section id="todayView" class="view active-view" data-panel="today">
-          <div class="panel command-panel" id="commandPanel">
+          <div class="panel command-panel">
             <div class="section-head">
               <div>
                 <p class="eyebrow">Command Center</p>
                 <h2>Hôm nay học gì?</h2>
               </div>
-              <span id="todayLabel" class="mini-badge">Sẵn sàng</span>
+              <span id="todayLabel" class="mini-badge">Đang tải</span>
             </div>
             <div class="today-grid">
               <article class="focus-block primary-block">
-                <p class="label">1 việc học chính</p>
-                <h3 id="mainFocus">Ghi 1 kiến thức mới và chưng cất thành flashcard.</h3>
+                <p class="label">1 bài nên mở</p>
+                <h3 id="mainFocus">Đồng bộ kho chung và đọc 1 bài ngắn.</h3>
                 <button class="button primary" id="doMainFocus" type="button">Làm ngay</button>
               </article>
               <article class="focus-block">
                 <p class="label">Cần ôn</p>
                 <h3 id="dueFocus">0 thẻ</h3>
-                <p class="muted">Ôn ngắn để nhớ lâu.</p>
+                <p class="muted">Ôn ít nhưng đều.</p>
               </article>
               <article class="focus-block">
-                <p class="label">Cần áp dụng</p>
-                <h3 id="actionFocus">0 hành động</h3>
-                <p class="muted">Tri thức phải đi vào việc thật.</p>
+                <p class="label">Kho chung</p>
+                <h3 id="syncFocus">Chưa đồng bộ</h3>
+                <p class="muted">Ai mở link app đều thấy dữ liệu public mới nhất.</p>
               </article>
             </div>
             <div id="todayFeed" class="feed"></div>
           </div>
         </section>
 
+        <section id="libraryView" class="view" data-panel="library">
+          <div class="panel library-panel">
+            <div class="section-head sticky-head">
+              <div>
+                <p class="eyebrow">Public + Private Library</p>
+                <h2>Thư viện tri thức</h2>
+              </div>
+              <span id="resultCount" class="mini-badge">0 mục</span>
+            </div>
+            <div class="filters">
+              <label class="search-box">
+                <span>Tìm kiếm</span>
+                <input id="searchInput" type="search" placeholder="Tìm tiêu đề, nội dung, tag, bài học, hành động...">
+              </label>
+              <label>
+                <span>Nguồn</span>
+                <select id="sourceFilter">
+                  <option value="all">Tất cả</option>
+                  <option value="public">Kho chung</option>
+                  <option value="local">Kho riêng</option>
+                </select>
+              </label>
+              <label>
+                <span>Lộ trình</span>
+                <select id="trackFilter"><option value="all">Tất cả</option></select>
+              </label>
+              <label>
+                <span>Trạng thái</span>
+                <select id="statusFilter">
+                  <option value="active">Đang học</option>
+                  <option value="favorite">Yêu thích</option>
+                  <option value="due">Đến hạn ôn</option>
+                  <option value="archived">Lưu trữ</option>
+                  <option value="all">Tất cả</option>
+                </select>
+              </label>
+              <label>
+                <span>Sắp xếp</span>
+                <select id="sortSelect">
+                  <option value="updated_desc">Mới cập nhật</option>
+                  <option value="created_desc">Mới tạo</option>
+                  <option value="review_due">Đến hạn ôn</option>
+                  <option value="title_asc">Tên A-Z</option>
+                  <option value="track_asc">Theo lộ trình</option>
+                </select>
+              </label>
+            </div>
+            <div id="tagBar" class="tag-bar" aria-label="Lọc nhanh theo tag"></div>
+            <div id="libraryList" class="card-list"></div>
+          </div>
+        </section>
+
+        <section id="readerView" class="view" data-panel="reader">
+          <div class="panel reader-panel">
+            <div id="readerContent" class="reader-content empty-state"></div>
+          </div>
+        </section>
+
         <section id="captureView" class="view" data-panel="capture">
-          <div id="capture" class="panel capture-panel">
+          <div class="panel capture-panel">
             <div class="section-head">
               <div>
-                <p class="eyebrow">Capture → Distill</p>
-                <h2>Ghi kiến thức mới</h2>
+                <p class="eyebrow">Capture → Distill → Practice → Apply</p>
+                <h2>Ghi kiến thức mới vào kho riêng</h2>
               </div>
               <span id="draftStatus" class="mini-badge">Draft an toàn</span>
             </div>
@@ -135,16 +211,11 @@
               <div class="form-grid two">
                 <label>
                   <span>Tiêu đề</span>
-                  <input id="noteTitle" type="text" maxlength="150" required placeholder="Ví dụ: Quy tắc học AI Agent trong 30 ngày">
+                  <input id="noteTitle" type="text" maxlength="180" required placeholder="Ví dụ: Cách học một kỹ năng mới trong 30 ngày">
                 </label>
                 <label>
-                  <span>Chế độ học</span>
-                  <select id="noteMode">
-                    <option value="deep">Học sâu</option>
-                    <option value="quick">Ghi nhanh</option>
-                    <option value="project">Ứng dụng vào dự án</option>
-                    <option value="exam">Ôn thi / kiểm tra</option>
-                  </select>
+                  <span>Lộ trình</span>
+                  <input id="noteTrack" type="text" maxlength="80" placeholder="Tự học thông minh, AI, Tài chính...">
                 </label>
               </div>
 
@@ -157,8 +228,8 @@
                 <label>
                   <span>Loại tri thức</span>
                   <select id="noteCategory">
-                    <option value="idea">💡 Ý tưởng</option>
                     <option value="lesson">📚 Bài học</option>
+                    <option value="idea">💡 Ý tưởng</option>
                     <option value="prompt">🤖 Prompt AI</option>
                     <option value="framework">🧩 Framework</option>
                     <option value="book">📖 Sách / Tài liệu</option>
@@ -166,15 +237,16 @@
                     <option value="checklist">✅ Checklist</option>
                     <option value="quote">💬 Trích dẫn</option>
                     <option value="skill">🛠️ Kỹ năng</option>
+                    <option value="finance">💰 Tài chính</option>
                     <option value="other">🧠 Khác</option>
                   </select>
                 </label>
                 <label>
-                  <span>Độ quan trọng</span>
-                  <select id="notePriority">
-                    <option value="high">Cao · cần dùng lại</option>
-                    <option value="medium">Vừa · đáng lưu</option>
-                    <option value="low">Thấp · tham khảo</option>
+                  <span>Cấp độ</span>
+                  <select id="noteLevel">
+                    <option value="beginner">Nhập môn</option>
+                    <option value="intermediate">Thực hành</option>
+                    <option value="advanced">Nâng cao</option>
                   </select>
                 </label>
                 <label>
@@ -191,85 +263,27 @@
               <div class="form-grid two">
                 <label>
                   <span>Tag</span>
-                  <input id="noteTags" type="text" maxlength="220" placeholder="ai, học tập, tài chính, kỹ năng">
+                  <input id="noteTags" type="text" maxlength="260" placeholder="ai, học tập, tài chính, kỷ luật">
                 </label>
                 <label>
                   <span>Nguồn / link</span>
-                  <input id="noteSource" type="url" maxlength="420" placeholder="https://...">
+                  <input id="noteSource" type="url" maxlength="520" placeholder="https://...">
                 </label>
               </div>
 
               <label>
                 <span>Việc muốn áp dụng sau khi học</span>
-                <input id="noteAction" type="text" maxlength="220" placeholder="Ví dụ: áp dụng framework này vào 1 mini app thật">
+                <input id="noteAction" type="text" maxlength="260" placeholder="Ví dụ: áp dụng framework này vào 1 bài viết hoặc 1 mini app thật">
               </label>
 
               <div class="form-actions">
-                <button class="button primary" id="saveButton" type="submit">Lưu & tạo bài học</button>
-                <button class="button secondary" id="savePlainButton" type="button">Chỉ lưu nháp sạch</button>
+                <button class="button primary" id="saveButton" type="submit">Lưu & chưng cất</button>
+                <button class="button secondary" id="savePlainButton" type="button">Chỉ lưu sạch</button>
                 <button class="button ghost" id="fillTemplate" type="button">Mẫu học nhanh</button>
                 <button class="button ghost" id="clearForm" type="button">Làm mới</button>
                 <button class="button ghost hidden" id="cancelEdit" type="button">Hủy sửa</button>
               </div>
             </form>
-          </div>
-        </section>
-
-        <section id="libraryView" class="view" data-panel="library">
-          <div class="panel library-panel">
-            <div class="section-head sticky-head">
-              <div>
-                <p class="eyebrow">Knowledge Vault</p>
-                <h2>Thư viện tri thức</h2>
-              </div>
-              <span id="resultCount" class="mini-badge">0 mục</span>
-            </div>
-            <div class="filters">
-              <label class="search-box">
-                <span>Tìm kiếm</span>
-                <input id="searchInput" type="search" placeholder="Tìm tiêu đề, nội dung, tag, bài học, hành động...">
-              </label>
-              <label>
-                <span>Loại</span>
-                <select id="categoryFilter"><option value="all">Tất cả</option></select>
-              </label>
-              <label>
-                <span>Trạng thái</span>
-                <select id="statusFilter">
-                  <option value="active">Đang học</option>
-                  <option value="favorite">Yêu thích</option>
-                  <option value="distilled">Đã chưng cất</option>
-                  <option value="archived">Lưu trữ</option>
-                  <option value="all">Tất cả</option>
-                </select>
-              </label>
-              <label>
-                <span>Sắp xếp</span>
-                <select id="sortSelect">
-                  <option value="updated_desc">Mới sửa trước</option>
-                  <option value="created_desc">Mới tạo trước</option>
-                  <option value="review_due">Đến hạn ôn trước</option>
-                  <option value="mastery_asc">Yếu trước</option>
-                  <option value="priority_desc">Ưu tiên</option>
-                  <option value="title_asc">Tên A-Z</option>
-                </select>
-              </label>
-            </div>
-            <div id="tagBar" class="tag-bar" aria-label="Lọc nhanh theo tag"></div>
-            <div id="libraryList" class="card-list"></div>
-          </div>
-        </section>
-
-        <section id="studioView" class="view" data-panel="studio">
-          <div class="panel studio-panel">
-            <div class="section-head">
-              <div>
-                <p class="eyebrow">Distill Studio</p>
-                <h2>Phòng chưng cất tri thức</h2>
-              </div>
-              <button class="button secondary" id="distillLatest" type="button">Chưng cất mục mới nhất</button>
-            </div>
-            <div id="studioContent" class="studio-content empty-state"></div>
           </div>
         </section>
 
@@ -312,44 +326,54 @@
           </div>
         </section>
 
-        <section id="pathsView" class="view" data-panel="paths">
-          <div class="panel path-panel">
-            <div class="section-head">
-              <div>
-                <p class="eyebrow">Learning Paths</p>
-                <h2>Lộ trình học từ dữ liệu của Lão</h2>
-              </div>
-              <button class="button secondary" id="seedStarter" type="button">Nạp bộ mẫu học tập</button>
-            </div>
-            <div id="pathBoard" class="path-board"></div>
-          </div>
-        </section>
-
         <section id="mapView" class="view" data-panel="map">
           <div class="panel map-panel">
             <div class="section-head">
               <div>
                 <p class="eyebrow">Knowledge Map</p>
-                <h2>Bản đồ tag & khoảng trống học tập</h2>
+                <h2>Bản đồ lộ trình, tag và khoảng trống học tập</h2>
               </div>
               <span id="mapCount" class="mini-badge">0 tag</span>
             </div>
             <div id="knowledgeMap" class="knowledge-map"></div>
           </div>
         </section>
+
+        <section id="syncView" class="view" data-panel="sync">
+          <div class="panel sync-panel">
+            <div class="section-head">
+              <div>
+                <p class="eyebrow">Public Data Sync</p>
+                <h2>Đồng bộ kho tri thức chung</h2>
+              </div>
+              <span id="syncBadge" class="mini-badge">LOCAL_ONLY</span>
+            </div>
+            <div class="sync-grid">
+              <article class="sync-card">
+                <p class="label">Nguồn public</p>
+                <strong id="publicSourceText">data/wisdom-public.json</strong>
+                <p class="muted">Khi deploy, file này nên nằm trong GitHub repo cùng app. Người dùng mở link app sẽ tự tải bản mới.</p>
+              </article>
+              <article class="sync-card">
+                <p class="label">Phiên bản dữ liệu</p>
+                <strong id="publicVersionText">Chưa đồng bộ</strong>
+                <p class="muted" id="syncTimeText">Chưa có lịch sử sync.</p>
+              </article>
+            </div>
+            <div class="form-actions">
+              <button class="button primary" id="syncNow" type="button">Kiểm tra & đồng bộ ngay</button>
+              <button class="button secondary" id="exportJson2" type="button">Xuất backup JSON</button>
+              <button class="button ghost" id="openPublicFile" type="button">Xem file public mẫu</button>
+            </div>
+            <div id="syncLog" class="sync-log"></div>
+            <details class="guide-box" open>
+              <summary>Cách vận hành đúng</summary>
+              <p><strong>GitHub</strong> giữ file public JSON để ai mở app cũng xem được kho chung. <strong>Google Drive</strong> chỉ nên giữ file ZIP/JSON backup cá nhân. App không cho người dùng public sửa dữ liệu trực tiếp để tránh phá JSON.</p>
+            </details>
+          </div>
+        </section>
       </section>
     </main>
-
-    <dialog id="readerDialog" class="reader-dialog">
-      <div class="reader-head">
-        <div>
-          <p class="eyebrow">Reading Room</p>
-          <h2 id="readerTitle">Tri thức</h2>
-        </div>
-        <button class="icon-button" id="closeReader" type="button">×</button>
-      </div>
-      <div id="readerBody" class="reader-body"></div>
-    </dialog>
 
     <div id="toast" class="toast" role="status" aria-live="polite"></div>
   </div>

@@ -1,11 +1,12 @@
 {
-  "name": "wisdom-notebook-learning-pro",
-  "version": "1.2.0",
+  "name": "wisdom-notebook-public-learning-library-pro",
+  "version": "1.3.0",
   "private": true,
-  "description": "Sổ Thông Thái Learning Pro - static offline-first PWA",
+  "description": "Sổ Thông Thái V1.3.0 Public Learning Library Pro - static PWA offline-first.",
   "scripts": {
     "check": "node --check app.js && node --check service-worker.js && node --check tools/validate-app.js",
     "validate": "node tools/validate-app.js"
   },
-  "devDependencies": {}
+  "keywords": ["pwa", "offline-first", "learning", "vietnamese", "indexeddb"],
+  "license": "UNLICENSED"
 }

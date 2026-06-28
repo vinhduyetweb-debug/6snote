@@ -1,8 +1,15 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Sổ Thông Thái">
-  <rect width="512" height="512" rx="112" fill="#111827"/>
-  <path d="M150 112h180c39 0 70 31 70 70v218H178c-39 0-70-31-70-70V154c0-23 19-42 42-42Z" fill="#fef3c7"/>
-  <path d="M178 112h184c23 0 42 19 42 42v246H220c-39 0-70-31-70-70V140c0-15 13-28 28-28Z" fill="#fffaf0"/>
-  <path d="M198 188h158M198 238h128M198 288h152" stroke="#b45309" stroke-width="24" stroke-linecap="round"/>
-  <circle cx="356" cy="148" r="48" fill="#1d4ed8"/>
-  <path d="M356 121v54M329 148h54" stroke="#fff" stroke-width="18" stroke-linecap="round"/>
+  <defs>
+    <linearGradient id="g" x1="0" x2="1" y1="0" y2="1">
+      <stop stop-color="#f59e0b"/>
+      <stop offset="1" stop-color="#06b6d4"/>
+    </linearGradient>
+  </defs>
+  <rect width="512" height="512" rx="112" fill="#0b1020"/>
+  <rect x="92" y="76" width="310" height="360" rx="42" fill="url(#g)" opacity=".96"/>
+  <rect x="132" y="118" width="232" height="48" rx="18" fill="#0b1020" opacity=".78"/>
+  <rect x="132" y="200" width="198" height="24" rx="12" fill="#0b1020" opacity=".62"/>
+  <rect x="132" y="248" width="228" height="24" rx="12" fill="#0b1020" opacity=".62"/>
+  <rect x="132" y="296" width="160" height="24" rx="12" fill="#0b1020" opacity=".62"/>
+  <text x="256" y="385" text-anchor="middle" font-family="Arial, sans-serif" font-size="92" font-weight="900" fill="#0b1020">慧</text>
 </svg>
