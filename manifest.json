@@ -1,19 +1,15 @@
 {
-  "name": "Sổ Thông Thái Knowledge OS",
+  "name": "Sổ Thông Thái Learning Pro",
   "short_name": "Sổ Thông Thái",
-  "description": "PWA offline-first để biến ghi chú thành bài học, hành động và thẻ ôn tập.",
-  "start_url": "./index.html",
-  "scope": "./",
+  "description": "PWA offline-first để học kiến thức mới, chưng cất bài học, flashcard, quiz và hành động.",
+  "start_url": ".",
+  "scope": ".",
   "display": "standalone",
-  "background_color": "#f7f3ea",
-  "theme_color": "#111827",
   "orientation": "portrait-primary",
+  "background_color": "#07101f",
+  "theme_color": "#0b1020",
+  "lang": "vi",
   "icons": [
-    {
-      "src": "icon.svg",
-      "sizes": "any",
-      "type": "image/svg+xml",
-      "purpose": "any maskable"
-    }
+    { "src": "icon.svg", "sizes": "any", "type": "image/svg+xml", "purpose": "any maskable" }
   ]
 }

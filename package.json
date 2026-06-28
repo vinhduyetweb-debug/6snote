@@ -1,18 +1,11 @@
 {
-  "name": "wisdom-notebook-pwa",
-  "version": "1.1.0",
+  "name": "wisdom-notebook-learning-pro",
+  "version": "1.2.0",
   "private": true,
-  "description": "Sổ Thông Thái Knowledge OS - offline-first PWA",
+  "description": "Sổ Thông Thái Learning Pro - static offline-first PWA",
   "scripts": {
     "check": "node --check app.js && node --check service-worker.js && node --check tools/validate-app.js",
     "validate": "node tools/validate-app.js"
   },
-  "keywords": [
-    "pwa",
-    "offline",
-    "notes",
-    "knowledge",
-    "second-brain"
-  ],
-  "license": "UNLICENSED"
+  "devDependencies": {}
 }

@@ -1,36 +1,68 @@
 # CHANGELOG
 
-## V1.1.0 — 2026-06-28 — Knowledge OS
+## V1.2.0 — Learning Pro
+
+Ngày: 2026-06-28
+
+### Mục tiêu
+
+Nâng cấp Sổ Thông Thái từ note app thành một **Learning OS offline-first** chuyên nghiệp hơn, đẹp hơn, có lý do để người dùng mở lại hằng ngày và phục vụ tốt hơn nhu cầu học kiến thức mới.
 
 ### Thay đổi chính
 
-- Nâng cấp từ app ghi chú gọn thành Knowledge OS.
-- Thêm Distill Engine offline:
-  - rút ý chính
-  - sinh bài học
-  - sinh hành động
-  - sinh flashcard
-  - gợi ý tag
-- Thêm tab Hôm nay.
-- Thêm tab Kho tri thức.
-- Thêm tab Ôn tập.
-- Thêm tab Flashcard.
-- Thêm tab Hành động.
-- Thêm tab Bản đồ tag.
-- Thêm lịch ôn tập nhẹ theo cấp độ nhớ.
-- Thêm dashboard mới: tri thức, cần ôn, việc mở, flashcard.
-- Giữ localStorage key cũ để tương thích dữ liệu V1.0.0.
-- Cập nhật giao diện gọn hơn theo dạng workbench.
-- Cập nhật README, manifest, service worker, validator.
+- Thiết kế lại giao diện theo phong cách Learning OS:
+  - Hero chuyên nghiệp.
+  - Command Center hôm nay.
+  - Sidebar điều hướng rõ ràng.
+  - Dashboard học tập.
+  - Dark/light mode.
+  - Card UI đẹp hơn, responsive mobile/desktop.
+- Thêm pipeline học tập:
+  - Capture.
+  - Distill.
+  - Practice.
+  - Apply.
+- Nâng cấp Distill Engine offline:
+  - Rút ý chính.
+  - Sinh bài học.
+  - Sinh khái niệm trọng tâm.
+  - Sinh câu hỏi tự học.
+  - Sinh hành động áp dụng.
+  - Sinh flashcard.
+- Thêm Spaced Review:
+  - Thẻ đến hạn.
+  - Chấm Quên / Nhớ / Rất chắc.
+  - Cập nhật lịch ôn theo level.
+- Thêm Quiz Mode:
+  - Tạo quiz nhanh từ flashcard.
+  - Kiểm tra đáp án ngay trong app.
+- Thêm Apply Board:
+  - Gom toàn bộ hành động mở từ tri thức.
+  - Đánh dấu xong.
+- Thêm Learning Paths:
+  - Tự tạo lộ trình học theo tag.
+  - Hiển thị số ghi chú, card, việc mở, tiến độ.
+- Thêm Knowledge Map:
+  - Bản đồ tag.
+  - Mastery theo mảng học.
+  - Gợi ý khoảng trống học tập.
+- Thêm Reading Room:
+  - Đọc lại nội dung gốc.
+  - Xem bản chưng cất trong modal riêng.
+- Thêm bộ mẫu học tập starter pack tùy chọn.
+- Cải thiện export/import JSON:
+  - Có schema/version.
+  - Gộp theo id khi import.
+  - Giữ dữ liệu hiện có.
+- Giữ localStorage key cũ để tránh phá dữ liệu V1.0/V1.1.
 
-### File đã sửa
+### File đã sửa / thêm
 
 - `index.html`
 - `style.css`
 - `app.js`
 - `manifest.json`
 - `service-worker.js`
-- `icon.svg`
 - `README.md`
 - `CHANGELOG.md`
 - `package.json`
@@ -43,19 +75,23 @@ npm run check
 npm run validate
 ```
 
-Kết quả: PASS.
+Kỳ vọng: PASS.
 
-### Tương thích dữ liệu
+### Ghi chú tương thích dữ liệu
 
-- Giữ key `wisdom_notebook_records_v1`.
-- Bản ghi cũ được normalize sang schemaVersion 2 khi app load.
-- Import JSON hỗ trợ cả `records` và `notes`.
+Vẫn giữ các key:
 
-## V1.0.0 — 2026-06-28 — Offline Core
+```text
+wisdom_notebook_records_v1
+wisdom_notebook_settings_v1
+wisdom_notebook_draft_v1
+wisdom_notebook_last_backup_v1
+```
 
-### Thay đổi chính
+Record cũ được normalize khi load để bổ sung các trường mới như `mode`, `target`, `cards`, `generatedActions`, `distill`.
 
-- Bản đầu tiên chỉ tập trung Sổ Thông Thái.
-- Ghi nhanh, tìm kiếm, lọc, yêu thích, lưu trữ.
-- Export/import JSON.
-- PWA offline.
+### Chưa test được
+
+- Chưa test thủ công trên điện thoại thật.
+- Chưa test với dữ liệu cực lớn hàng nghìn ghi chú.
+- Chưa có đồng bộ đa thiết bị.

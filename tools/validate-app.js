@@ -1,9 +1,8 @@
-'use strict';
-
 const fs = require('fs');
 const path = require('path');
 
 const root = path.resolve(__dirname, '..');
+const version = '1.2.0';
 const required = [
   'index.html',
   'style.css',
@@ -16,64 +15,57 @@ const required = [
   'package.json'
 ];
 const forbidden = ['.env.local', '.vercel', 'node_modules'];
-const placeholders = ['[TÊN APP]', '[MÔ TẢ', 'Lorem ipsum', 'TODO:', 'FIXME'];
+const placeholders = ['[TÊN APP]', '[MÔ TẢ', '[CHỨC NĂNG', 'TODO:', 'FIXME:', 'lorem ipsum'];
+const requiredStorageKeys = [
+  'wisdom_notebook_records_v1',
+  'wisdom_notebook_settings_v1',
+  'wisdom_notebook_draft_v1',
+  'wisdom_notebook_last_backup_v1'
+];
+
 const errors = [];
-
-function read(file) {
-  return fs.readFileSync(path.join(root, file), 'utf8');
-}
-
-function exists(file) {
-  return fs.existsSync(path.join(root, file));
-}
+function fail(message) { errors.push(message); }
+function read(file) { return fs.readFileSync(path.join(root, file), 'utf8'); }
 
 for (const file of required) {
-  if (!exists(file)) errors.push(`Thiếu file bắt buộc: ${file}`);
+  if (!fs.existsSync(path.join(root, file))) fail(`Missing required file: ${file}`);
 }
-
-for (const name of forbidden) {
-  if (exists(name)) errors.push(`Không được có trong release: ${name}`);
+for (const item of forbidden) {
+  if (fs.existsSync(path.join(root, item))) fail(`Forbidden release artifact found: ${item}`);
 }
 
 if (!errors.length) {
-  const html = read('index.html');
-  const app = read('app.js');
-  const sw = read('service-worker.js');
   const manifest = JSON.parse(read('manifest.json'));
-  const pkg = JSON.parse(read('package.json'));
+  if (!manifest.name || !manifest.short_name || !manifest.start_url || !manifest.icons?.length) fail('manifest.json thiếu name/short_name/start_url/icons.');
+  if (manifest.display !== 'standalone') fail('manifest.json display phải là standalone.');
 
-  if (!html.includes('id="app"')) errors.push('index.html thiếu root #app.');
-  if (!html.includes('Knowledge OS V1.1.0')) errors.push('index.html thiếu nhãn version V1.1.0.');
-  if (!html.includes('Lưu & chưng cất')) errors.push('index.html thiếu hành động chưng cất.');
-  if (!html.includes('data-view="review"')) errors.push('index.html thiếu tab ôn tập.');
-  if (!html.includes('data-view="cards"')) errors.push('index.html thiếu tab flashcard.');
-  if (!html.includes('data-view="actions"')) errors.push('index.html thiếu tab hành động.');
-  if (!html.includes('data-view="map"')) errors.push('index.html thiếu tab bản đồ tag.');
+  const html = read('index.html');
+  if (!html.includes('id="app"')) fail('index.html thiếu root container #app.');
+  if (!html.includes('data-app-version="1.2.0"')) fail('index.html thiếu data-app-version 1.2.0.');
+  if (!html.includes('manifest.json')) fail('index.html chưa link manifest.json.');
 
-  if (!manifest.name || manifest.name !== 'Sổ Thông Thái Knowledge OS') errors.push('manifest name không đúng.');
-  if (!manifest.start_url || !manifest.display) errors.push('manifest thiếu start_url/display.');
-  if (pkg.version !== '1.1.0') errors.push('package.json version không đúng.');
+  const sw = read('service-worker.js');
+  if (!sw.includes(`wisdom-notebook-cache-v${version}`)) fail('service-worker.js cache name chưa đúng version.');
+  if (!sw.includes('./index.html')) fail('service-worker.js thiếu offline fallback index.html.');
 
-  if (!sw.includes('wisdom-notebook-cache-v1.1.0')) errors.push('service-worker cache name chưa đúng version.');
-  if (!app.includes("const APP_VERSION = '1.1.0'")) errors.push('app.js APP_VERSION chưa đúng.');
-  if (!app.includes('wisdom_notebook_records_v1')) errors.push('app.js thiếu localStorage key ổn định.');
-  if (!app.includes('buildInsight')) errors.push('app.js thiếu Distill Engine buildInsight.');
-  if (!app.includes('makeFlashcards')) errors.push('app.js thiếu tạo flashcard.');
-  if (!app.includes('reviewNote')) errors.push('app.js thiếu logic ôn tập.');
-  if (!app.includes('exportJson') || !app.includes('importJson')) errors.push('app.js thiếu export/import JSON.');
+  const app = read('app.js');
+  for (const key of requiredStorageKeys) {
+    if (!app.includes(key)) fail(`app.js thiếu localStorage key ổn định: ${key}`);
+  }
+  if (!app.includes('Capture → Distill') && !html.includes('Capture → Distill')) fail('App thiếu pipeline học tập Capture → Distill.');
+  if (!app.includes('buildQuiz') || !html.includes('Quiz nhanh')) fail('App thiếu quiz mode.');
+  if (!app.includes('getDueCards') || !html.includes('Ôn tập')) fail('App thiếu review/spaced repetition.');
 
-  for (const file of ['index.html', 'app.js', 'README.md', 'CHANGELOG.md']) {
-    const content = read(file);
-    for (const token of placeholders) {
-      if (content.includes(token)) errors.push(`${file} còn placeholder: ${token}`);
-    }
+  const allText = required.map((file) => read(file)).join('\n').toLowerCase();
+  for (const token of placeholders) {
+    if (allText.includes(token.toLowerCase())) fail(`Còn placeholder nội bộ: ${token}`);
   }
 }
 
 if (errors.length) {
-  console.error('VALIDATE FAILED');
+  console.error('VALIDATION FAILED');
   for (const error of errors) console.error(`- ${error}`);
   process.exit(1);
 }
 
-console.log('VALIDATE PASS - Wisdom Notebook V1.1.0 Knowledge OS package is clean.');
+console.log('VALIDATION PASS - Wisdom Notebook Learning Pro V1.2.0');

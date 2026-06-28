@@ -1,44 +1,47 @@
-# Sổ Thông Thái Knowledge OS V1.1.0
+# Sổ Thông Thái V1.2.0 — Learning Pro
 
-**Sổ Thông Thái Knowledge OS** là mini app PWA offline-first giúp lưu tri thức cá nhân và biến ghi chú thô thành:
+**Sổ Thông Thái Learning Pro** là một mini app PWA offline-first để phục vụ nhu cầu học kiến thức mới hằng ngày. Bản V1.2.0 không còn là một app note đơn thuần. App được thiết kế như một **bàn học cá nhân offline**: ghi kiến thức, chưng cất ý chính, tạo flashcard, ôn tập, làm quiz và biến bài học thành hành động.
 
-- ý chính
-- bài học
-- hành động cần làm
-- flashcard ôn tập
-- bản đồ tag tri thức
+## Triết lý sản phẩm
 
-App chạy tĩnh bằng HTML/CSS/JavaScript thuần, không backend, không đăng nhập, không private API, không tracking.
+Mỗi kiến thức đi qua 4 bước:
 
-## Điểm khác Note thường
+1. **Capture** — ghi lại kiến thức thô.
+2. **Distill** — rút ý chính, bài học, khái niệm, câu hỏi.
+3. **Practice** — ôn tập bằng flashcard và quiz.
+4. **Apply** — biến tri thức thành hành động thật.
 
-Bản V1.1.0 không chỉ lưu ghi chú. App có **Distill Engine offline** để chưng cất nội dung ngay trên thiết bị:
+Mục tiêu: người dùng mở app lần sau vẫn muốn quay lại vì luôn thấy rõ hôm nay cần học gì, ôn gì và làm gì.
 
-1. Ghi hoặc dán nội dung thô.
-2. Bấm `Lưu & chưng cất`.
-3. App tự tạo ý chính, bài học, hành động, flashcard và tag gợi ý.
-4. Mỗi ngày vào tab `Ôn tập` và `Hành động` để dùng lại tri thức.
+## Tính năng chính
 
-Distill Engine là thuật toán local đơn giản, không gọi AI thật. Khi cần AI thật có thể nâng cấp ở V2.
+- Giao diện Learning OS chuyên nghiệp, mobile-first, dark/light mode.
+- Dashboard học tập: tổng tri thức, thẻ cần ôn, hành động mở, streak, mastery.
+- Mission hôm nay: app tự gợi ý việc nên làm tiếp theo.
+- Ghi kiến thức mới theo chế độ: học sâu, ghi nhanh, ứng dụng dự án, ôn thi.
+- Distill Engine offline: tự tạo ý chính, bài học, khái niệm, câu hỏi và hành động.
+- Flashcard tự sinh từ nội dung.
+- Spaced Review: thẻ đến hạn, nút Quên/Nhớ/Rất chắc.
+- Quiz nhanh từ flashcard.
+- Apply Board: gom các hành động sinh ra từ tri thức.
+- Learning Paths: tự tạo lộ trình học từ tag.
+- Knowledge Map: bản đồ tag, mastery, việc mở và khoảng trống học tập.
+- Reading Room: đọc lại ghi chú và bản chưng cất trong modal riêng.
+- Tìm kiếm, lọc theo loại, tag, trạng thái, ưu tiên.
+- Export/import JSON để backup và chuyển thiết bị.
+- Reset dữ liệu có xác nhận kép.
+- PWA offline cache shell app sau lần mở đầu tiên.
 
-## Chức năng chính
+## Công nghệ
 
-- Ghi nhanh tri thức.
-- Chỉ lưu hoặc lưu kèm chưng cất.
-- Tự giữ nháp bằng localStorage.
-- Tìm kiếm toàn văn.
-- Lọc theo loại, tag, yêu thích, lưu trữ.
-- Dashboard: tổng tri thức, mục cần ôn, hành động mở, flashcard.
-- Tab Hôm nay.
-- Tab Kho tri thức.
-- Tab Ôn tập theo cấp độ nhớ.
-- Tab Flashcard.
-- Tab Hành động.
-- Tab Bản đồ tag.
-- Copy nhanh ghi chú hoặc hành động.
-- Export/import JSON.
-- Reset dữ liệu có xác nhận 2 lần.
-- PWA offline sau lần mở đầu tiên.
+- HTML/CSS/JavaScript thuần.
+- Không framework.
+- Không backend.
+- Không login.
+- Không private API.
+- Không tracking.
+- Dữ liệu lưu bằng `localStorage`.
+- Service worker cache app shell.
 
 ## Cấu trúc file
 
@@ -59,7 +62,7 @@ Distill Engine là thuật toán local đơn giản, không gọi AI thật. Khi
 
 ## Cách chạy local
 
-Cách đơn giản:
+Có thể mở trực tiếp `index.html`, nhưng để test PWA/service worker ổn hơn nên chạy bằng local server:
 
 ```bash
 python -m http.server 8080
@@ -71,8 +74,6 @@ Sau đó mở:
 http://localhost:8080
 ```
 
-Hoặc dùng bất kỳ static server nào.
-
 ## Cách test
 
 ```bash
@@ -80,37 +81,39 @@ npm run check
 npm run validate
 ```
 
-Trong đó:
+`npm run check` kiểm tra cú pháp JavaScript.
 
-- `check`: kiểm tra cú pháp JavaScript.
-- `validate`: kiểm tra file bắt buộc, manifest, service worker, localStorage key, export/import và release sạch.
+`npm run validate` kiểm tra file bắt buộc, manifest, service worker, cache version, root container, storage key và placeholder nội bộ.
 
-## Deploy Vercel
+## Cách dùng app
 
-```bash
-npm run check
-npm run validate
-git add .
-git commit -m "Release V1.1.0 Knowledge OS"
-git push origin main
-npx vercel --prod
-```
+1. Mở app.
+2. Chọn **Ghi kiến thức mới**.
+3. Nhập tiêu đề, nội dung, tag, nguồn và hành động muốn áp dụng.
+4. Bấm **Lưu & tạo bài học**.
+5. Vào **Distill Studio** để xem ý chính, bài học, câu hỏi và flashcard.
+6. Vào **Ôn tập** để review thẻ đến hạn.
+7. Vào **Quiz** để kiểm tra nhanh.
+8. Vào **Hành động** để biến bài học thành việc thật.
+9. Dùng **Xuất JSON** định kỳ để backup.
 
 ## Backup / Restore
 
 ### Backup
 
-Bấm `Xuất JSON` để tải file backup.
+Bấm **Xuất JSON**. App sẽ tải file dạng:
+
+```text
+wisdom-notebook-backup-YYYY-MM-DD.json
+```
 
 ### Restore
 
-Mở `Sao lưu & phục hồi` → bấm `Nhập JSON` → chọn file backup.
+Bấm **Nhập JSON**, chọn file backup. App sẽ nhập dữ liệu và gộp theo `id`, không xóa dữ liệu hiện có.
 
-Import sẽ hợp nhất theo ID. App không tự xóa dữ liệu cũ.
+## Tương thích dữ liệu
 
-## Lưu trữ dữ liệu
-
-Dữ liệu chính nằm trong localStorage key:
+Bản V1.2.0 tiếp tục dùng key chính:
 
 ```text
 wisdom_notebook_records_v1
@@ -119,18 +122,33 @@ wisdom_notebook_draft_v1
 wisdom_notebook_last_backup_v1
 ```
 
-Key records vẫn giữ hậu tố `_v1` để không phá dữ liệu của bản V1.0.0. Khi mở V1.1.0, app tự normalize/migration bản ghi cũ sang schema mới trong localStorage.
+Mục tiêu là không phá dữ liệu cũ từ V1.0.0 và V1.1.0. Các record cũ sẽ được normalize khi load.
 
-## Giới hạn V1.1.0
+## Deploy Vercel
 
-- Chưa có AI thật.
-- Chưa đồng bộ đa thiết bị.
-- Chưa lưu file nặng như PDF, ảnh, voice.
-- Distill Engine chỉ là thuật toán offline rule-based.
-- Dữ liệu phụ thuộc vào trình duyệt hiện tại, nên cần export JSON định kỳ.
+```bash
+npm run check
+npm run validate
+git add .
+git commit -m "Release V1.2.0 Learning Pro"
+git push origin main
+npx vercel --prod
+```
 
-## Version hiện tại
+## Deploy GitHub Pages
 
-**V1.1.0 — Knowledge OS**
+Đẩy toàn bộ source lên branch chính, bật GitHub Pages trỏ về root folder.
 
-Slogan: **Biết mà dùng được, tri thức mới sống.**
+## Giới hạn hiện tại
+
+- Distill Engine là thuật toán offline, không phải AI cloud thật.
+- Không đồng bộ đa thiết bị tự động.
+- Không lưu file PDF/ảnh/voice trực tiếp để giữ app nhẹ.
+- localStorage phụ thuộc trình duyệt; nên export JSON định kỳ.
+- Chưa test thủ công trên toàn bộ thiết bị thật.
+
+## Version
+
+**V1.2.0 — Learning Pro**
+
+Slogan: **Biết mà ôn được, làm được, mới là tri thức sống.**
