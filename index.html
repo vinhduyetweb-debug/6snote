@@ -1,0 +1,214 @@
+<!doctype html>
+<html lang="vi">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta name="theme-color" content="#0f172a">
+  <meta name="description" content="Sổ Thông Thái - PWA ghi tri thức cá nhân, offline-first, gọn và dễ dùng.">
+  <title>Sổ Thông Thái</title>
+  <link rel="manifest" href="manifest.json">
+  <link rel="icon" href="icon.svg" type="image/svg+xml">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <noscript>Ứng dụng cần JavaScript để lưu dữ liệu trên thiết bị.</noscript>
+
+  <div id="app" class="app-shell" data-app-version="1.0.0">
+    <header class="hero panel">
+      <div class="topbar">
+        <div>
+          <p class="eyebrow">Wisdom Notebook · Offline Core V1.0.0</p>
+          <h1>Sổ Thông Thái</h1>
+          <p class="subtitle">Ghi nhanh tri thức. Tìm lại dễ. Dùng lại mỗi ngày.</p>
+        </div>
+        <div class="network-pill" id="networkPill" aria-live="polite">
+          <span class="dot"></span><span id="networkText">Đang kiểm tra</span>
+        </div>
+      </div>
+
+      <section class="state-card" aria-labelledby="stateTitle">
+        <div>
+          <p class="label">Trạng thái sổ</p>
+          <h2 id="stateTitle"><span id="stateBadge" class="state-badge empty">EMPTY</span></h2>
+          <p id="stateExplain" class="muted">Chưa có tri thức nào. Hãy lưu một ý tưởng đáng dùng lại.</p>
+        </div>
+        <p id="stateSlogan" class="slogan">Một dòng hôm nay, một kho báu ngày mai.</p>
+      </section>
+
+      <div class="hero-actions">
+        <a href="#capture" class="button primary">+ Ghi tri thức</a>
+        <button class="button secondary" id="exportJson" type="button">Xuất JSON</button>
+        <button class="button ghost" id="toggleFocus" type="button">Focus Mode</button>
+      </div>
+    </header>
+
+    <main class="layout">
+      <section class="left-column">
+        <section id="capture" class="panel capture-panel" aria-labelledby="captureTitle">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Ghi nhanh</p>
+              <h2 id="captureTitle">Điều đáng nhớ là gì?</h2>
+            </div>
+            <span id="draftStatus" class="mini-badge">Draft an toàn</span>
+          </div>
+
+          <form id="noteForm" autocomplete="off">
+            <input type="hidden" id="noteId">
+            <label>
+              <span>Tiêu đề</span>
+              <input id="noteTitle" type="text" maxlength="120" required placeholder="Ví dụ: Cách dùng AI để tóm tắt tài liệu">
+            </label>
+
+            <label>
+              <span>Nội dung</span>
+              <textarea id="noteContent" rows="7" placeholder="Ghi ý chính, bài học, prompt, checklist hoặc link cần nhớ..."></textarea>
+            </label>
+
+            <div class="form-grid">
+              <label>
+                <span>Loại tri thức</span>
+                <select id="noteCategory">
+                  <option value="idea">💡 Ý tưởng</option>
+                  <option value="lesson">📚 Bài học</option>
+                  <option value="prompt">🤖 Prompt AI</option>
+                  <option value="quote">💬 Trích dẫn</option>
+                  <option value="checklist">✅ Checklist</option>
+                  <option value="link">🔗 Link / Video</option>
+                  <option value="book">📖 Sách / Tài liệu</option>
+                  <option value="other">🧠 Khác</option>
+                </select>
+              </label>
+              <label>
+                <span>Mức dùng lại</span>
+                <select id="notePriority">
+                  <option value="medium">Vừa</option>
+                  <option value="high">Cao</option>
+                  <option value="low">Thấp</option>
+                </select>
+              </label>
+            </div>
+
+            <label>
+              <span>Tag</span>
+              <input id="noteTags" type="text" maxlength="160" placeholder="ai, tài chính, học tập, công việc">
+            </label>
+
+            <label>
+              <span>Nguồn / link liên quan</span>
+              <input id="noteSource" type="url" maxlength="300" placeholder="https://...">
+            </label>
+
+            <div class="form-actions">
+              <button class="button primary" id="saveButton" type="submit">Lưu tri thức</button>
+              <button class="button secondary" id="clearForm" type="button">Làm mới</button>
+              <button class="button ghost hidden" id="cancelEdit" type="button">Hủy sửa</button>
+            </div>
+          </form>
+        </section>
+
+        <section class="panel list-panel" aria-labelledby="listTitle">
+          <div class="section-head sticky-head">
+            <div>
+              <p class="eyebrow">Kho tri thức</p>
+              <h2 id="listTitle">Danh sách ghi chú</h2>
+            </div>
+            <span id="resultCount" class="mini-badge">0 mục</span>
+          </div>
+
+          <div class="filters">
+            <label class="search-box">
+              <span>Tìm kiếm</span>
+              <input id="searchInput" type="search" placeholder="Tìm tiêu đề, nội dung, tag...">
+            </label>
+            <label>
+              <span>Loại</span>
+              <select id="categoryFilter">
+                <option value="all">Tất cả</option>
+                <option value="idea">💡 Ý tưởng</option>
+                <option value="lesson">📚 Bài học</option>
+                <option value="prompt">🤖 Prompt AI</option>
+                <option value="quote">💬 Trích dẫn</option>
+                <option value="checklist">✅ Checklist</option>
+                <option value="link">🔗 Link / Video</option>
+                <option value="book">📖 Sách / Tài liệu</option>
+                <option value="other">🧠 Khác</option>
+              </select>
+            </label>
+            <label>
+              <span>Hiển thị</span>
+              <select id="statusFilter">
+                <option value="active">Đang dùng</option>
+                <option value="favorite">Yêu thích</option>
+                <option value="archived">Lưu trữ</option>
+                <option value="all">Tất cả</option>
+              </select>
+            </label>
+            <label>
+              <span>Sắp xếp</span>
+              <select id="sortSelect">
+                <option value="updated_desc">Mới sửa trước</option>
+                <option value="created_desc">Mới tạo trước</option>
+                <option value="title_asc">Tên A-Z</option>
+                <option value="priority_desc">Ưu tiên</option>
+              </select>
+            </label>
+          </div>
+
+          <div id="tagBar" class="tag-bar" aria-label="Lọc nhanh theo tag"></div>
+          <div id="noteList" class="note-list" aria-live="polite"></div>
+        </section>
+      </section>
+
+      <aside class="right-column">
+        <section class="panel metrics-panel" aria-labelledby="dashboardTitle">
+          <div class="section-head">
+            <div>
+              <p class="eyebrow">Dashboard</p>
+              <h2 id="dashboardTitle">Sổ hôm nay</h2>
+            </div>
+          </div>
+          <div class="metric-grid">
+            <article class="metric-card"><strong id="metricTotal">0</strong><span>Tổng ghi chú</span></article>
+            <article class="metric-card"><strong id="metricToday">0</strong><span>Ghi hôm nay</span></article>
+            <article class="metric-card"><strong id="metricFavorites">0</strong><span>Yêu thích</span></article>
+            <article class="metric-card"><strong id="metricTags">0</strong><span>Tag</span></article>
+          </div>
+          <div class="nudge-box">
+            <p class="label">Gợi ý hôm nay</p>
+            <p id="dailyNudge">Ghi một bài học vừa học được, dù chỉ 3 dòng.</p>
+          </div>
+        </section>
+
+        <details class="panel help-panel" open>
+          <summary>Cách dùng gọn</summary>
+          <ol class="help-list">
+            <li>Ghi một ý tưởng, bài học, prompt hoặc link.</li>
+            <li>Gắn 1–3 tag để sau này tìm nhanh.</li>
+            <li>Đánh dấu ⭐ với thứ cần dùng lại nhiều.</li>
+            <li>Xuất JSON định kỳ để sao lưu.</li>
+          </ol>
+        </details>
+
+        <details class="panel data-panel">
+          <summary>Sao lưu & phục hồi</summary>
+          <div class="data-actions">
+            <button class="button secondary" id="importButton" type="button">Nhập JSON</button>
+            <input id="importFile" type="file" accept="application/json" hidden>
+            <button class="button danger" id="resetData" type="button">Reset dữ liệu</button>
+          </div>
+          <p class="small muted">Dữ liệu lưu trong trình duyệt của thiết bị này. Import sẽ hợp nhất theo ID, không tự xóa dữ liệu cũ.</p>
+        </details>
+
+        <details class="panel details-panel">
+          <summary>Giới hạn V1.0.0</summary>
+          <p class="small muted">Bản này chỉ tập trung Sổ Thông Thái. Chưa có AI thật, chưa đồng bộ đa thiết bị, chưa lưu file nặng. Mục tiêu là gọn, ổn định và dễ deploy.</p>
+        </details>
+      </aside>
+    </main>
+  </div>
+
+  <div id="toast" class="toast" role="status" aria-live="polite"></div>
+  <script src="app.js" defer></script>
+</body>
+</html>

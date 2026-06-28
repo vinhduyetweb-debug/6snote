@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" role="img" aria-label="Sổ Thông Thái">
+  <rect width="512" height="512" rx="112" fill="#0f172a"/>
+  <path d="M142 120h178c43 0 78 35 78 78v194H194c-29 0-52-23-52-52V120Z" fill="#fef3c7"/>
+  <path d="M168 120h180c26 0 48 22 48 48v224H216c-26 0-48-22-48-48V120Z" fill="#b45309" opacity=".22"/>
+  <path d="M198 184h134M198 230h118M198 276h96" stroke="#0f172a" stroke-width="24" stroke-linecap="round"/>
+  <path d="M152 120v220c0 29 23 52 52 52" fill="none" stroke="#ffffff" stroke-width="20" stroke-linecap="round" opacity=".85"/>
+  <circle cx="362" cy="146" r="38" fill="#f59e0b"/>
+</svg>

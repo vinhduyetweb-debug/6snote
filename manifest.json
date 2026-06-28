@@ -1,0 +1,19 @@
+{
+  "name": "Sổ Thông Thái",
+  "short_name": "Thông Thái",
+  "description": "PWA ghi tri thức cá nhân, offline-first, gọn và dễ dùng.",
+  "start_url": "./index.html",
+  "scope": "./",
+  "display": "standalone",
+  "background_color": "#f7f3ea",
+  "theme_color": "#0f172a",
+  "orientation": "portrait-primary",
+  "icons": [
+    {
+      "src": "icon.svg",
+      "sizes": "any",
+      "type": "image/svg+xml",
+      "purpose": "any maskable"
+    }
+  ]
+}
